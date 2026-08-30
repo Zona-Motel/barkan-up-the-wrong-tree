@@ -1,0 +1,161 @@
+/* Deliberately plain. Default proportions, one border colour, no tinted panels,
+   no uppercase labels. The only colour is on deleted and inserted words, where
+   it carries meaning. */
+
+:root {
+  /* The page commits to a light ground. Declaring it keeps the browser from
+     painting form controls dark for a viewer whose OS is in dark mode. */
+  color-scheme: light;
+
+  --rule: #ccc;
+  --dim: #555;
+  --del-fg: #8a1010;
+  --del-bg: #fde4e4;
+  --ins-fg: #0a5220;
+  --ins-bg: #dff3e2;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #000;
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.wrap { max-width: 1500px; margin: 0 auto; padding: 0 20px 80px; }
+
+a { color: #000; }
+
+header { padding: 20px 0 0; }
+header h1 { font-size: 20px; margin: 0; }
+
+#toolbar {
+  padding: 14px 0;
+  display: flex; flex-wrap: wrap; gap: 14px; align-items: center;
+  font-size: 13px;
+}
+#toolbar label { display: flex; align-items: center; gap: 5px; }
+#toolbar input[type=search] { width: 260px; }
+#count { color: var(--dim); margin-left: auto; }
+
+table { border-collapse: collapse; width: 100%; }
+
+article.piece { border-top: 1px solid var(--rule); margin-bottom: 0; }
+/* One aligned list: the summary rows and the header above them share a grid,
+   so the metadata reads as columns without a table wrapping the collapsibles. */
+.listhead, article.piece summary {
+  display: grid;
+  /* Fixed px, not em: the header row and the article rows have different
+     font-sizes, and em tracks would resolve to different widths in each,
+     drifting the columns out of alignment. */
+  grid-template-columns: 48px 1fr 96px 76px 76px;
+  gap: 10px;
+  align-items: baseline;
+  padding: 5px 8px;
+}
+.listhead { font-size: 12px; color: var(--dim); border-bottom: 1px solid #000; }
+.listhead .c-title { color: #000; font-weight: 700; }
+
+article.piece summary { cursor: pointer; font-size: 14px; list-style: none; }
+article.piece summary::-webkit-details-marker { display: none; }
+article.piece summary .title-text { font-size: 17px; line-height: 1.3; }
+article.piece summary:hover .title-text { text-decoration: underline; }
+article.piece summary .c-id,
+article.piece summary .c-date,
+article.piece summary .c-pass,
+article.piece summary .c-links { color: var(--dim); font-size: 13px; font-variant-numeric: tabular-nums; }
+
+article.piece details[open] { padding-bottom: 26px; border-bottom: 1px solid var(--rule); }
+article.piece .meta,
+article.piece table.changes,
+article.piece .delta { margin-left: 8px; margin-right: 8px; }
+.meta { font-size: 12px; color: var(--dim); margin-bottom: 10px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.meta a { color: var(--dim); }
+
+
+
+table.changes { table-layout: fixed; }
+table.changes th {
+  font-size: 12px; color: var(--dim); font-weight: 400;
+  text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--rule);
+}
+table.changes td { vertical-align: top; padding: 10px 8px 12px; border-bottom: 1px solid var(--rule); }
+table.changes col.c-n { width: 68px; }
+table.changes col.c-old, table.changes col.c-new { width: 46%; }
+
+td.n { font-size: 12px; color: var(--dim); font-variant-numeric: tabular-nums; }
+td.n a { color: var(--dim); }
+td.n .kind { display: block; font-size: 11px; margin-top: 2px; }
+
+.blk { margin-bottom: 12px; }
+.blk:last-child { margin-bottom: 0; }
+.blk .txt { margin: 0; }
+.blk .txt.q { border-left: 2px solid var(--rule); padding-left: 8px; }
+.blk .tagname { font-size: 11px; color: var(--dim); }
+/* Anchor phrases inside a passage carry their real link. They take the colour of
+   whatever marks them, so a link inside a deletion still reads as deleted. */
+.blk .txt a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.empty { color: var(--dim); }
+
+/* Links are evidence: always visible, never truncated in the card view. */
+ul.links { list-style: none; margin: 6px 0 0; padding: 0; font-size: 12px; color: var(--dim); }
+ul.links li { margin-bottom: 2px; word-break: break-all; }
+ul.links a { color: var(--dim); }
+/* A link the correction swapped is marked where it sits, not only in the
+   summary at the foot of the article. */
+ul.links li.gone, ul.links li.gone a { color: var(--del-fg); }
+ul.links li.gone .anchor { text-decoration: line-through; }
+ul.links li.new, ul.links li.new a { color: var(--ins-fg); }
+
+/* Changed words are marked in place on both sides, so a change is findable
+   without reading both paragraphs. Strikethrough carries the same distinction
+   as the colour, for anyone who cannot rely on hue. */
+del, ins { text-decoration: none; border-radius: 2px; padding: 0 1px; }
+del { color: var(--del-fg); background: var(--del-bg); text-decoration: line-through; }
+ins { color: var(--ins-fg); background: var(--ins-bg); }
+.delta .ADDED, .delta .REMOVED { background: none; }
+
+.inline-diff { margin: 0 0 10px; }
+.inline-diff .sim { font-size: 12px; color: var(--dim); }
+
+
+.delta { margin-top: 10px; font-size: 12px; color: var(--dim); }
+.delta h3 { font-size: 12px; font-weight: 700; margin: 8px 0 3px; color: #000; }
+.delta ul { margin: 0; padding-left: 1.2em; }
+.delta li { word-break: break-all; margin-bottom: 2px; }
+.delta .ADDED { color: var(--ins-fg); }
+.delta .REMOVED { color: var(--del-fg); }
+
+tr.hidden, article.hidden, #index tr.hidden { display: none; }
+
+/* Single change, alone, for screenshotting. */
+.card { width: 1200px; margin: 0 auto; padding: 24px 30px; }
+.card h1 { font-size: 19px; margin: 0 0 4px; }
+.card .card-meta { font-size: 12px; color: var(--dim); margin-bottom: 18px; }
+.card .pane { margin-bottom: 18px; }
+.card .pane > h2 { font-size: 12px; color: var(--dim); font-weight: 400; margin: 0 0 6px; border-bottom: 1px solid var(--rule); padding-bottom: 3px; }
+.card footer { margin-top: 18px; border-top: 1px solid var(--rule); padding-top: 6px; font-size: 12px; color: var(--dim); }
+
+.notes-on-method { border-top: 1px solid #000; margin-top: 30px; padding-top: 12px; max-width: 60em; }
+.notes-on-method h2 { font-size: 15px; margin: 0 0 8px; }
+.notes-on-method h2 + p { margin-top: 0; }
+.notes-on-method h2:not(:first-child) { margin-top: 18px; }
+.notes-on-method p { font-size: 14px; margin: 0 0 10px; }
+
+@media print {
+  #toolbar, #index, .card-actions { display: none; }
+  article.piece { break-inside: avoid; }
+}
+
+@media (max-width: 900px) {
+  .listhead { display: none; }
+  article.piece summary { display: block; }
+  table.changes, table.changes tbody, table.changes tr, table.changes td { display: block; width: auto; }
+  table.changes thead { display: none; }
+  table.changes td { border-bottom: none; }
+  table.changes tr { border-bottom: 1px solid var(--rule); padding-bottom: 10px; }
+  table.changes td::before { content: attr(data-label); display: block; font-size: 11px; color: var(--dim); margin-bottom: 4px; }
+  .card { width: auto; }
+}
