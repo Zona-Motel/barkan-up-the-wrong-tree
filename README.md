@@ -1,6 +1,6 @@
-# The 67 Columns
+# Ross Barkan + NYMag -  67 Columns Data 
 
-Companion page to Jarett Kobek's essay on *Zona Motel*: the 67 Ross Barkan columns *New York*
-magazine corrected, each shown as originally published beside the version now live.
+`/docs` contains the code for the diffs website which is published at
+<https://zona-motel.github.io/barkan-up-the-wrong-tree/>. diffs.js is the diffs data for the site in json format. Matches the markdown output from the scripts. 
 
-Static site. Open `index.html`, or serve the repo root.
+`/scripts` contains two scripts, the crawler and diff generator that produced the data. If you run these the output will be a collection of .md files of the diffs.
