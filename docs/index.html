@@ -7,14 +7,18 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
 
 <header>
-  <h1>The 67 Columns</h1>
+  <div class="wrap">
+    <a class="logo" href="https://zonamotel.substack.com/"><img src="goat.webp" alt="Zona Motel" width="64" height="64"></a>
+    <h1>The 67 Columns</h1>
+  </div>
 </header>
 
+<div class="wrap">
+
 <nav id="toolbar">
-  <label><input type="search" id="f-text" placeholder="search the text of all 67"></label>
+  <label><input type="search" id="f-text" placeholder="search all 67 &mdash; Enter to run, &quot;quotes&quot; for a phrase"></label>
   <button id="expand-all">Expand all</button>
   <button id="collapse-all">Collapse all</button>
   <span id="count"></span>
@@ -26,6 +30,7 @@
   <span class="c-date">Original</span>
   <span class="c-pass">Passages</span>
   <span class="c-links">Links</span>
+  <span></span>
 </div>
 
 
@@ -34,7 +39,8 @@
 <footer class="notes-on-method">
   <h2>About these diffs</h2>
   <p>
-    <i>New York</i> never published a list. It did, however, append the same sentence to every
+    <i>New York</i> never published a list of the remediated articles. It did, however, append the
+    same sentence to every
     article it corrected — “August 14, 2026: A previous version of this article did not meet
     <i>New York</i>’s editorial standards. It has been updated to include appropriate
     attribution.” That uniformity is what makes the set identifiable: search the archive for
@@ -60,6 +66,7 @@
 </div>
 
 <script src="data/diffs.js"></script>
+<script src="data/notes.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
   "use strict";
 
   var DATA = window.BARKAN_DATA || { articles: [], summary: {} };
+  var NOTES = window.BARKAN_NOTES || {};
 
   // ---------- rendering helpers ----------
 
@@ -45,21 +46,22 @@
     return { oldHtml: oldHtml, newHtml: newHtml, oldText: oldText, newText: newText };
   }
 
-  // (anchor, url) pairs present on each side, so a link that the correction
-  // swapped can be marked where it sits rather than only in the list at the end.
+  // Destinations present on each side, so a link the correction really did add or
+  // drop is marked where it sits rather than only in the list at the end. Keyed on
+  // the URL alone: the same destination hung on different words is the sentence
+  // changing, not the link, and marking it gone-and-new would say otherwise.
   function linkSets(change) {
-    var key = function (l) { return l.anchor + "\u0000" + l.url; };
     var side = function (blocks) {
       var set = {};
       blocks.forEach(function (b) {
-        (b.links || []).forEach(function (l) { set[key(l)] = true; });
+        (b.links || []).forEach(function (l) { set[l.url] = true; });
       });
       return set;
     };
     var o = side(change.old), n = side(change.new);
     return {
-      old: function (l) { return n[key(l)] ? "" : "gone"; },
-      new: function (l) { return o[key(l)] ? "" : "new"; }
+      old: function (l) { return n[l.url] ? "" : "gone"; },
+      new: function (l) { return o[l.url] ? "" : "new"; }
     };
   }
 
@@ -76,10 +78,57 @@
   var CARD_MODE = false;   // set by the ?card= screenshot view
   var KIND = { REPLACE: "rewritten", INSERT: "added", DELETE: "deleted" };
 
+  var LINK_KIND = {
+    removed: "Removed",
+    added: "Added",
+    // The URL is untouched; the words carrying it are not. Named rather than
+    // counted, because nothing about the link itself changed.
+    reworded: "Same link, new wording"
+  };
+
+  function quoted(list) {
+    return list.map(function (t) { return "“" + t + "”"; }).join(", ");
+  }
+
   // URLs are never shortened. What distinguishes two links is usually at the end
   // — a query string like ?ref=compactmag.com, or a slug tail — so eliding it would
   // hide the evidence the page exists to show. Long URLs wrap instead.
   function shortUrl(u) { return u; }
+
+  // navigator.clipboard needs a secure context, which file:// is not -- and the
+  // page is meant to work when opened by double-clicking it. Fall back to the
+  // old selection-and-execCommand route there.
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function (resolve, reject) {
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.top = "-1000px";
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = false;
+      try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+      document.body.removeChild(ta);
+      ok ? resolve() : reject();
+    });
+  }
+
+  // The anchor has to keep its "a" prefix: openFor feeds the hash straight to
+  // querySelector, and #046 is not a valid selector.
+  function permalink(id) {
+    return location.origin === "null" || location.protocol === "file:"
+      ? location.href.split("#")[0] + "#a" + id
+      : location.origin + location.pathname + location.search + "#a" + id;
+  }
+
+  function ymd(ts) {
+    ts = String(ts || "");
+    return ts.length >= 8 ? ts.slice(0, 4) + "-" + ts.slice(4, 6) + "-" + ts.slice(6, 8) : "";
+  }
 
   // Turn each anchor phrase in the passage into the link it actually carried.
   // Works on text nodes so it cannot break the <del>/<ins> markup already there,
@@ -157,26 +206,56 @@
     t.appendChild(el("span", "title-text", a.title));
     sum.appendChild(t);
 
-    var ts = a.archiveTimestamp || "";
-    sum.appendChild(el("span", "c-date",
-      ts.length >= 8 ? ts.slice(0, 4) + "-" + ts.slice(4, 6) + "-" + ts.slice(6, 8) : "—"));
+    sum.appendChild(el("span", "c-date", ymd(a.archiveTimestamp) || "—"));
 
 
     sum.appendChild(el("span", "c-pass", String(a.changes.length)));
-    var rem = a.linkDelta.filter(function (x) { return x.op === "REMOVED"; }).length;
-    var add = a.linkDelta.length - rem;
+    // Only links that came or went. A URL reattached to different words is not
+    // a link change, so it is left out of this count.
+    var rem = 0, add = 0;
+    a.linkChanges.forEach(function (x) {
+      if (x.kind === "removed") rem++;
+      else if (x.kind === "added") add++;
+    });
     var lbl = [rem ? "−" + rem : "", add ? "+" + add : ""].filter(Boolean).join(" ");
     sum.appendChild(el("span", "c-links", lbl || "—"));
 
+    // Copies a link to this article. It lives inside the <summary>, so its click
+    // has to be kept from reaching the toggle.
+    var perma = el("button", "perma", "#");
+    perma.type = "button";
+    perma.title = "Copy a link to this article";
+    perma.setAttribute("aria-label", "Copy a link to " + a.title);
+    perma.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      copyText(permalink(a.id)).then(function () {
+        perma.textContent = "✓";
+        perma.classList.add("done");
+      }, function () {
+        perma.textContent = "!";
+        perma.classList.add("done");
+      });
+      setTimeout(function () {
+        perma.textContent = "#";
+        perma.classList.remove("done");
+      }, 1200);
+    });
+    sum.appendChild(perma);
 
     det.appendChild(sum);
     sec.appendChild(det);
 
+    // Live page, the snapshot the diff was built from, and the newest snapshot —
+    // so the article is still reachable if nymag takes it down.
     var meta = el("div", "meta");
-    [["Live", a.liveUrl], ["Wayback " + (a.archiveTimestamp || "").slice(0, 8), a.archiveUrl]]
+    [["Live page", a.liveUrl, ""],
+     ["Original snapshot", a.archiveUrl, a.archiveTimestamp],
+     ["Latest snapshot", a.latestUrl, a.latestTimestamp]]
       .forEach(function (p) {
         if (!p[1] || p[1] === "NONE") return;
-        var x = el("a", null, "[" + p[0] + "]");
+        var label = p[0] + (p[2] ? " " + ymd(p[2]) : "");
+        var x = el("a", null, label);
         x.href = p[1]; x.target = "_blank"; x.rel = "noopener";
         meta.appendChild(x);
       });
@@ -209,32 +288,46 @@
       tr.appendChild(renderSide(c.old, "Original", marks.old, ls.old));
       tr.appendChild(renderSide(c.new, "Updated", marks.new, ls.new));
 
-      // searchable haystack
-      tr.dataset.text = (c.old.concat(c.new).map(function (b) { return b.text; }).join(" ")).toLowerCase();
+      // Searchable haystack. Blocks are joined by a character no query can
+      // contain, so a quoted phrase cannot match across two paragraphs.
+      tr.dataset.text = c.old.concat(c.new)
+        .map(function (b) { return fold(b.text); }).join("\u0000");
       tb.appendChild(tr);
     });
     table.appendChild(tb);
     det.appendChild(table);
 
-    if (a.linkDelta.length) {
+    if (a.linkChanges.length) {
       var d = el("div", "delta");
-      [["REMOVED", "Links the correction removed"],
-       ["ADDED", "Links the correction added"]].forEach(function (g) {
-        var items = a.linkDelta.filter(function (x) { return x.op === g[0]; });
-        if (!items.length) return;
-        d.appendChild(el("h3", null, g[1]));
-        var ul = document.createElement("ul");
-        items.forEach(function (x) {
-          var li = document.createElement("li");
-          li.appendChild(el("span", "anchor", "on the words “" + x.anchor + "” — "));
-          var lk = el("a", null, shortUrl(x.url));
-          lk.href = x.url; lk.target = "_blank"; lk.rel = "noopener";
-          li.appendChild(lk);
-          ul.appendChild(li);
-        });
-        d.appendChild(ul);
+      d.appendChild(el("h3", null, "Link changes"));
+      var ul = document.createElement("ul");
+      a.linkChanges.forEach(function (x) {
+        var li = document.createElement("li");
+        li.className = x.kind;
+        li.appendChild(el("span", "tag", LINK_KIND[x.kind]));
+        li.appendChild(el("span", "anchor", " " + (
+          x.kind === "reworded" ? quoted(x.old) + " → " + quoted(x.new)
+                                : "on the words " + quoted(x.old.concat(x.new))
+        ) + " — "));
+        var lk = el("a", null, shortUrl(x.url));
+        lk.href = x.url; lk.target = "_blank"; lk.rel = "noopener";
+        li.appendChild(lk);
+        ul.appendChild(li);
       });
+      d.appendChild(ul);
       det.appendChild(d);
+    }
+
+    // Hand-written commentary from data/notes.js. Most articles have none, and
+    // those show no heading -- an empty "Note" would read as an omission.
+    var note = NOTES[a.id];
+    if (note) {
+      var nd = el("div", "note");
+      nd.appendChild(el("h3", null, "Note"));
+      var np = document.createElement("p");
+      np.innerHTML = note;   // the file is hand-authored, so its markup is trusted
+      nd.appendChild(np);
+      det.appendChild(nd);
     }
     return sec;
   }
@@ -270,8 +363,36 @@
 
   // ---------- filters ----------
 
+  // These articles are full of curly apostrophes and quotes, so a phrase copied
+  // out of one and typed back with straight ones would never match. Both the
+  // text and the query are folded to straight punctuation and single spaces
+  // before they are compared.
+  function fold(s) {
+    return String(s).toLowerCase()
+      .replace(/[\u2018\u2019\u02bc]/g, "'")
+      .replace(/[\u201c\u201d]/g, '"')
+      .replace(/[\u2013\u2014]/g, "-")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  // "a phrase in quotes" is one term that must appear intact; anything else is
+  // split on spaces into separate terms, all of which must appear, in any order.
+  // A quote left open while still typing runs to the end of the query, so the
+  // results narrow with each keystroke instead of waiting for the closing one.
+  function parseQuery(q) {
+    var out = [], re = /"([^"]*)"?|(\S+)/g, m;
+    while ((m = re.exec(q)) !== null) {
+      var t = (m[1] !== undefined ? m[1] : m[2]).trim();
+      if (t) out.push(t);
+    }
+    return out;
+  }
+
+
   function applyFilters() {
-    var q = document.getElementById("f-text").value.trim().toLowerCase();
+    var terms = parseQuery(fold(document.getElementById("f-text").value));
+    var q = terms.length > 0;
     var shownA = 0, shownC = 0;
 
     DATA.articles.forEach(function (a) {
@@ -279,14 +400,15 @@
       if (!sec) return;
       var rowsVisible = 0;
       sec.querySelectorAll("tbody tr").forEach(function (tr) {
-        var hide = !!q && tr.dataset.text.indexOf(q) === -1;
+        var hay = tr.dataset.text;
+        var hide = q && !terms.every(function (t) { return hay.indexOf(t) !== -1; });
         tr.classList.toggle("hidden", hide);
         if (!hide) rowsVisible++;
       });
       var show = rowsVisible > 0;
       sec.classList.toggle("hidden", !show);
       var det = sec.querySelector("details");
-      if (det && !det.dataset.pinned) det.open = !!q && show;
+      if (det && !det.dataset.pinned) det.open = q && show;
       if (show) { shownA++; shownC += rowsVisible; }
     });
     document.getElementById("count").textContent =
@@ -342,7 +464,19 @@
   DATA.articles.forEach(function (a) { frag.appendChild(renderArticle(a)); });
   main.appendChild(frag);
 
-  document.getElementById("f-text").addEventListener("input", applyFilters);
+  // The search runs on Enter, not on every keystroke: filtering as you type
+  // collapses and reopens 67 articles under the cursor, and a quoted phrase is
+  // half-typed -- and matches nothing -- for most of the time you are writing it.
+  var box = document.getElementById("f-text");
+  box.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") { e.preventDefault(); applyFilters(); }
+  });
+  // Emptying the box restores the full list without asking for Enter, which
+  // covers backspacing it out and the clear button inside the field.
+  box.addEventListener("input", function () {
+    if (box.value === "") applyFilters();
+  });
+  box.addEventListener("search", applyFilters);
 
   watchToggles();
   document.getElementById("expand-all").addEventListener("click", function () {

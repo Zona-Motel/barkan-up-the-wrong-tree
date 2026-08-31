@@ -28,7 +28,17 @@ body {
 
 a { color: #000; }
 
-header { padding: 20px 0 0; }
+/* The band runs the full width of the viewport, so it sits outside .wrap and
+   carries a .wrap of its own to keep the title on the page's left margin.
+   #d29ee0 is the flat background of the Zona Motel mark, sampled from it, so
+   the square dissolves into the band. */
+header { background: #d29ee0; }
+header .wrap {
+  padding: 16px 20px;
+  display: flex; align-items: center; gap: 12px;
+}
+header .logo { flex: none; display: block; }
+header .logo img { width: 64px; height: 64px; display: block; }
 header h1 { font-size: 20px; margin: 0; }
 
 #toolbar {
@@ -37,7 +47,7 @@ header h1 { font-size: 20px; margin: 0; }
   font-size: 13px;
 }
 #toolbar label { display: flex; align-items: center; gap: 5px; }
-#toolbar input[type=search] { width: 260px; }
+#toolbar input[type=search] { width: 360px; }
 #count { color: var(--dim); margin-left: auto; }
 
 table { border-collapse: collapse; width: 100%; }
@@ -50,7 +60,7 @@ article.piece { border-top: 1px solid var(--rule); margin-bottom: 0; }
   /* Fixed px, not em: the header row and the article rows have different
      font-sizes, and em tracks would resolve to different widths in each,
      drifting the columns out of alignment. */
-  grid-template-columns: 48px 1fr 96px 76px 76px;
+  grid-template-columns: 48px 1fr 96px 76px 76px 24px;
   gap: 10px;
   align-items: baseline;
   padding: 5px 8px;
@@ -67,10 +77,23 @@ article.piece summary .c-date,
 article.piece summary .c-pass,
 article.piece summary .c-links { color: var(--dim); font-size: 13px; font-variant-numeric: tabular-nums; }
 
+/* Sits in the last grid cell so it never disturbs the columns. Kept faint until
+   the row is hovered -- it is a utility, not part of the data. */
+.perma {
+  justify-self: end;
+  border: 0; background: none; padding: 0; cursor: pointer;
+  font: inherit; font-size: 13px; line-height: 1;
+  color: transparent; transition: color .1s;
+}
+article.piece summary:hover .perma, .perma:focus-visible { color: var(--dim); }
+.perma:hover { color: #000; }
+.perma.done { color: var(--ins-fg); }
+
 article.piece details[open] { padding-bottom: 26px; border-bottom: 1px solid var(--rule); }
 article.piece .meta,
 article.piece table.changes,
-article.piece .delta { margin-left: 8px; margin-right: 8px; }
+article.piece .delta,
+article.piece .note { margin-left: 8px; margin-right: 8px; }
 .meta { font-size: 12px; color: var(--dim); margin-bottom: 10px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
 .meta a { color: var(--dim); }
 
@@ -115,7 +138,6 @@ ul.links li.new, ul.links li.new a { color: var(--ins-fg); }
 del, ins { text-decoration: none; border-radius: 2px; padding: 0 1px; }
 del { color: var(--del-fg); background: var(--del-bg); text-decoration: line-through; }
 ins { color: var(--ins-fg); background: var(--ins-bg); }
-.delta .ADDED, .delta .REMOVED { background: none; }
 
 .inline-diff { margin: 0 0 10px; }
 .inline-diff .sim { font-size: 12px; color: var(--dim); }
@@ -125,8 +147,17 @@ ins { color: var(--ins-fg); background: var(--ins-bg); }
 .delta h3 { font-size: 12px; font-weight: 700; margin: 8px 0 3px; color: #000; }
 .delta ul { margin: 0; padding-left: 1.2em; }
 .delta li { word-break: break-all; margin-bottom: 2px; }
-.delta .ADDED { color: var(--ins-fg); }
-.delta .REMOVED { color: var(--del-fg); }
+/* One list, so each line has to say for itself which of the three it is. */
+.delta .tag { font-weight: 700; }
+.delta li.removed .tag { color: var(--del-fg); }
+.delta li.added .tag { color: var(--ins-fg); }
+.delta li.reworded .tag { color: var(--dim); font-weight: 400; font-style: italic; }
+
+/* Commentary, not evidence: same scale as the link list, but set in the body
+   colour so it reads as someone talking rather than as more extracted data. */
+.note { margin-top: 12px; font-size: 13px; max-width: 46em; }
+.note h3 { font-size: 12px; font-weight: 700; margin: 8px 0 3px; }
+.note p { margin: 0; }
 
 tr.hidden, article.hidden, #index tr.hidden { display: none; }
 

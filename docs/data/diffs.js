@@ -9,11 +9,12 @@ window.BARKAN_DATA = {
    "DELETE": 0
   },
   "noChanges": 0,
-  "noticesDropped": 36,
-  "sidebarsDropped": 2,
-  "withLinkChanges": 51,
-  "linksAdded": 83,
-  "linksRemoved": 72
+  "noticesDropped": 23,
+  "sidebarsDropped": 35,
+  "withLinkChanges": 37,
+  "linksAdded": 45,
+  "linksRemoved": 28,
+  "linksReworded": 34
  },
  "articles": [
   {
@@ -128,37 +129,48 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "salon visits",
-     "url": "https://archive.is/EBq0a"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "three straight months.",
-     "url": "https://www.newswhip.com/2020/10/these-were-the-top-publishers-of-september-2020-on-facebook/"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "Washington Post notes",
-     "url": "https://www.washingtonpost.com/technology/2026/05/09/ben-shapiro-daily-wire-maga-media/"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "then–House Speaker Nancy Pelosi’s salon visits",
-     "url": "https://www.dailywire.com/news/pelosi-admits-breaking-lockdown-for-salon-visit-blames-business-says-she-did-nothing-wrong"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "three straight months",
-     "url": "https://www.newswhip.com/2020/10/these-were-the-top-publishers-of-september-2020-on-facebook/"
-    }
-   ],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "removed",
+     "url": "https://archive.is/EBq0a",
+     "old": [
+      "salon visits"
+     ],
+     "new": []
+    },
+    {
+     "kind": "added",
+     "url": "https://www.dailywire.com/news/pelosi-admits-breaking-lockdown-for-salon-visit-blames-business-says-she-did-nothing-wrong",
+     "old": [],
+     "new": [
+      "then–House Speaker Nancy Pelosi’s salon visits"
+     ]
+    },
+    {
+     "kind": "added",
+     "url": "https://www.washingtonpost.com/technology/2026/05/09/ben-shapiro-daily-wire-maga-media/",
+     "old": [],
+     "new": [
+      "Washington Post notes"
+     ]
+    },
+    {
+     "kind": "reworded",
+     "url": "https://www.newswhip.com/2020/10/these-were-the-top-publishers-of-september-2020-on-facebook/",
+     "old": [
+      "three straight months."
+     ],
+     "new": [
+      "three straight months"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829050325",
+   "latestUrl": "https://web.archive.org/web/20260829050325/https://nymag.com/intelligencer/article/why-ben-shapiros-media-empire-is-collapsing.html"
   },
   {
    "id": "002",
@@ -228,22 +240,24 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "lack of accomplishments.",
-     "url": "https://unherd.com/newsroom/the-true-lori-chavez-deremer-scandal-her-empty-record/?edition=us"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "points out",
-     "url": "https://unherd.com/newsroom/the-true-lori-chavez-deremer-scandal-her-empty-record/?edition=us"
-    }
-   ],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "reworded",
+     "url": "https://unherd.com/newsroom/the-true-lori-chavez-deremer-scandal-her-empty-record/?edition=us",
+     "old": [
+      "lack of accomplishments."
+     ],
+     "new": [
+      "points out"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829050614",
+   "latestUrl": "https://web.archive.org/web/20260829050614/https://nymag.com/intelligencer/article/donald-trump-labor-secretary-lori-chavez-deremer.html"
   },
   {
    "id": "003",
@@ -303,11 +317,13 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [],
+   "latestTimestamp": "20260829050743",
+   "latestUrl": "https://web.archive.org/web/20260829050743/https://nymag.com/intelligencer/article/zohran-mamdani-approval-rating-eric-adams.html"
   },
   {
    "id": "004",
@@ -422,27 +438,29 @@ window.BARKAN_DATA = {
       },
       {
        "similarity": 0.99,
-       "inline": "In New York, AI interests have shown they are willing to spend ferociously against those whom they view as impediments to their industry. In this way, they are mimicking the Israel lobby. The group Democratic Majority for Israel, for example, exists solely to intervene in the Democratic primary. Alex Bores, an Upper East Side assemblyman, is an outspoken critic of AI who has sought to aggressively regulate the industry in New York. He’s now running in the open Democratic primary to replace Jerry Nadler, a top contender in a field that includes JFK grandson Jack Schlossberg, anti-Trump pundit and attorney George Conway, and Nadler’s endorsed candidate, Assemblyman Micah Lasher. [-It-]{+As Politico reports , it+}’s Bores, though, who is the furious target of Leading the Future, a powerful, pro-AI political operation. Leading the Future has cut multiple anti-Bores ads already, and it’s clear it’ll be doing everything it can to crush him ahead of the June primary."
+       "inline": "In New York, AI interests have shown they are willing to spend ferociously against those whom they view as impediments to their industry. In this way, they are mimicking the Israel lobby. The group Democratic Majority for Israel, for example, exists solely to intervene in the Democratic primary. Alex Bores, an Upper East Side assemblyman, is an outspoken critic of AI who has sought to aggressively regulate the industry in New York. He’s now running in the open Democratic primary to replace Jerry Nadler, a top contender in a field that includes JFK grandson Jack Schlossberg, anti-Trump pundit and attorney George Conway, and Nadler’s endorsed candidate, Assemblyman Micah Lasher. [-It’s-]{+As Politico reports , it’s+} Bores, though, who is the furious target of Leading the Future, a powerful, pro-AI political operation. Leading the Future has cut multiple anti-Bores ads already, and it’s clear it’ll be doing everything it can to crush him ahead of the June primary."
       }
      ]
-    }
-   ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "furious target",
-     "url": "https://www.politico.com/news/magazine/2026/03/06/alex-bores-ai-leading-the-future-anthropic-00797055?nid=0000018f-3124-de07-a98f-3be4d1400000&nname=politico-toplines&nrid=571f2a62-3ff7-49b8-b85f-6e6e058a552a"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "reports",
-     "url": "https://www.politico.com/news/magazine/2026/03/06/alex-bores-ai-leading-the-future-anthropic-00797055?nid=0000018f-3124-de07-a98f-3be4d1400000&nname=politico-toplines&nrid=571f2a62-3ff7-49b8-b85f-6e6e058a552a"
     }
    ],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "reworded",
+     "url": "https://www.politico.com/news/magazine/2026/03/06/alex-bores-ai-leading-the-future-anthropic-00797055?nid=0000018f-3124-de07-a98f-3be4d1400000&nname=politico-toplines&nrid=571f2a62-3ff7-49b8-b85f-6e6e058a552a",
+     "old": [
+      "furious target"
+     ],
+     "new": [
+      "reports"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829050854",
+   "latestUrl": "https://web.archive.org/web/20260829050854/https://nymag.com/intelligencer/article/ai-bad-reputation-gives-democrats-golden-opportunity.html"
   },
   {
    "id": "005",
@@ -492,17 +510,22 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "electricity crisis",
-     "url": "https://www.nytimes.com/interactive/2026/03/19/world/americas/cuba-blackout-electricity.html?searchResultPosition=2"
-    }
-   ],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "removed",
+     "url": "https://www.nytimes.com/interactive/2026/03/19/world/americas/cuba-blackout-electricity.html?searchResultPosition=2",
+     "old": [
+      "electricity crisis"
+     ],
+     "new": []
+    }
+   ],
+   "latestTimestamp": "20260829051058",
+   "latestUrl": "https://web.archive.org/web/20260829051058/https://nymag.com/intelligencer/article/trumps-brutalization-of-cuba-is-both-cruel-and-pointless.html"
   },
   {
    "id": "006",
@@ -675,32 +698,37 @@ window.BARKAN_DATA = {
       },
       {
        "similarity": 0.72,
-       "inline": "[-If-]{+Then+} there[- is one candidate who could be the version of Nixon going to China for pro-Israel Democrats, it-]’s Pritzker.{+ As Yeselson and Venturella write, “only the famously anti-Communist Nixon could go to China,” and “Pritzker may well be similarly singular regarding Israel.”+} He’s a progressive billionaire who cannot be credibly accused of not supporting Israel. He doesn’t have to swear off AIPAC dollars because he doesn’t need them in the first place. He’s plenty capable of self-funding or turning to other liberal donors who appreciate his willingness to confront President Trump. [-Pritzker, unlike-]{+Unlike+} Newsom and Shapiro, {+they note, Pritzker “+}did not implement [-any-]{+new+} [-new-]{+state+} laws {+in Illinois cracking down on campus speech in response +}to[- suppress-] the [-pro-Palestine,-]{+Gaza+} [-anti-Israel-]{+encampments+} [-campus-]{+of+} [-protests-]{+2024+}.{+”+} [-In-]{+And in+} a recent podcast appearance , the Illinois governor [-was more explicit-]{+spoke+} about[- the cause of-] Palestinian rights [-than-]{+and+} [-he had been in the past, declaring that,-]{+how+} as a Jew committed to[- upholding the values of-] social justice, “I have to apply that equally to the state of Israel as I do to other countries that have committed atrocities.”"
+       "inline": "[-If-]{+Then+} [-there-]{+there’s+} [-is-]{+Pritzker.+} [-one-]{+As+} [-candidate-]{+Yeselson+} [-who-]{+and Venturella write, “only the famously anti-Communist Nixon+} could [-be the version of Nixon going-]{+go+} to China{+,”+} [-for-]{+and+} [-pro-Israel-]{+“Pritzker+} [-Democrats,-]{+may+} [-it’s-]{+well+} [-Pritzker-]{+be similarly singular regarding Israel+}.{+”+} He’s a progressive billionaire who cannot be credibly accused of not supporting Israel. He doesn’t have to swear off AIPAC dollars because he doesn’t need them in the first place. He’s plenty capable of self-funding or turning to other liberal donors who appreciate his willingness to confront President Trump. [-Pritzker, unlike-]{+Unlike+} Newsom and Shapiro, {+they note, Pritzker “+}did not implement [-any-]{+new+} [-new-]{+state+} laws {+in Illinois cracking down on campus speech in response +}to[- suppress-] the [-pro-Palestine,-]{+Gaza+} [-anti-Israel-]{+encampments+} [-campus-]{+of+} [-protests-]{+2024+}.{+”+} [-In-]{+And in+} a recent podcast appearance , the Illinois governor [-was more explicit-]{+spoke+} about[- the cause of-] Palestinian rights [-than-]{+and+} [-he had been in the past, declaring that,-]{+how+} as a Jew committed to[- upholding the values of-] social justice, “I have to apply that equally to the state of Israel as I do to other countries that have committed atrocities.”"
       }
      ]
-    }
-   ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "recently pointed out",
-     "url": "https://newrepublic.com/article/207310/democrats-new-israel-policy-pritzker-newsom"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "a Gallup poll",
-     "url": "https://news.gallup.com/poll/702440/israelis-no-longer-ahead-americans-middle-east-sympathies.aspx"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "recently wrote",
-     "url": "https://newrepublic.com/article/207310/democrats-new-israel-policy-pritzker-newsom"
     }
    ],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "added",
+     "url": "https://news.gallup.com/poll/702440/israelis-no-longer-ahead-americans-middle-east-sympathies.aspx",
+     "old": [],
+     "new": [
+      "a Gallup poll"
+     ]
+    },
+    {
+     "kind": "reworded",
+     "url": "https://newrepublic.com/article/207310/democrats-new-israel-policy-pritzker-newsom",
+     "old": [
+      "recently pointed out"
+     ],
+     "new": [
+      "recently wrote"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829051210",
+   "latestUrl": "https://web.archive.org/web/20260829051210/https://nymag.com/intelligencer/article/how-will-2028-democrats-handle-israel.html"
   },
   {
    "id": "007",
@@ -746,11 +774,13 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [],
+   "latestTimestamp": "20260829051353",
+   "latestUrl": "https://web.archive.org/web/20260829051353/https://nymag.com/intelligencer/article/aocs-munich-stumble-is-a-warning-to-the-left.html"
   },
   {
    "id": "008",
@@ -796,11 +826,13 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [],
+   "latestTimestamp": "20260829051502",
+   "latestUrl": "https://web.archive.org/web/20260829051502/https://nymag.com/intelligencer/article/the-cold-has-been-mamdanis-first-serious-test.html"
   },
   {
    "id": "009",
@@ -860,22 +892,24 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "released",
-     "url": "https://gothamist.com/news/nypd-releases-video-showing-police-shooting-22-year-old-schizophrenic-man"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "writes",
-     "url": "https://gothamist.com/news/nypd-releases-video-showing-police-shooting-22-year-old-schizophrenic-man"
-    }
-   ],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "reworded",
+     "url": "https://gothamist.com/news/nypd-releases-video-showing-police-shooting-22-year-old-schizophrenic-man",
+     "old": [
+      "released"
+     ],
+     "new": [
+      "writes"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829051656",
+   "latestUrl": "https://web.archive.org/web/20260829051656/https://nymag.com/intelligencer/article/mamdani-tisch-police-shooting-nyc.html"
   },
   {
    "id": "010",
@@ -939,57 +973,32 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "Mamdani’s Israel Balancing Act Has Just Begun",
-     "url": "https://nymag.com/intelligencer/article/mamdani-israel-palestine-balancing-act.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "Trump Is Barely Trying With His New Health-care Plan",
-     "url": "https://nymag.com/intelligencer/article/trump-is-barely-trying-with-his-new-healthcare-plan.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "Trump’s Losing War on Minneapolis",
-     "url": "https://nymag.com/intelligencer/article/trumps-losing-war-on-minneapolis.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "kicked off",
-     "url": "https://www.nytimes.com/2026/01/21/us/politics/kennedy-rfk-pennsylvania.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "Mamdani Is Treading a Little Too Cautiously With the NYPD",
-     "url": "https://nymag.com/intelligencer/article/mamdani-is-treading-a-little-too-cautiously-with-the-nypd.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "Why Ben Shapiro’s Media Empire Is Collapsing",
-     "url": "https://nymag.com/intelligencer/article/why-ben-shapiros-media-empire-is-collapsing.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "Why Zohran Mamdani Picked a Fight With Ken Griffin",
-     "url": "https://nymag.com/intelligencer/article/why-zohran-mamdani-picked-a-fight-with-ken-griffin.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "obtained waivers",
-     "url": "https://www.fns.usda.gov/snap/waivers/foodrestriction#:~:text=We%20encourage%20states%20to%20submit,Texas%20Utah%20Virginia%20West%20Virginia"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "reports",
-     "url": "https://www.nytimes.com/2026/01/21/us/politics/kennedy-rfk-pennsylvania.html"
-    }
-   ],
    "dropped": {
     "notice": 1,
-    "sidebar": 1
-   }
+    "sidebar": 6
+   },
+   "linkChanges": [
+    {
+     "kind": "added",
+     "url": "https://www.fns.usda.gov/snap/waivers/foodrestriction#:~:text=We%20encourage%20states%20to%20submit,Texas%20Utah%20Virginia%20West%20Virginia",
+     "old": [],
+     "new": [
+      "obtained waivers"
+     ]
+    },
+    {
+     "kind": "reworded",
+     "url": "https://www.nytimes.com/2026/01/21/us/politics/kennedy-rfk-pennsylvania.html",
+     "old": [
+      "kicked off"
+     ],
+     "new": [
+      "reports"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829051746",
+   "latestUrl": "https://web.archive.org/web/20260829051746/https://nymag.com/intelligencer/article/will-rfk-jr-run-for-president-in-2028.html"
   },
   {
    "id": "011",
@@ -1192,22 +1201,24 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "thinly sketched",
-     "url": "https://www.nytimes.com/2026/01/15/us/politics/trump-health-care-plan.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "reports,",
-     "url": "https://www.nytimes.com/2026/01/15/us/politics/trump-health-care-plan.html"
-    }
-   ],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "reworded",
+     "url": "https://www.nytimes.com/2026/01/15/us/politics/trump-health-care-plan.html",
+     "old": [
+      "thinly sketched"
+     ],
+     "new": [
+      "reports,"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829051854",
+   "latestUrl": "https://web.archive.org/web/20260829051854/https://nymag.com/intelligencer/article/trump-is-barely-trying-with-his-new-healthcare-plan.html"
   },
   {
    "id": "012",
@@ -1408,7 +1419,7 @@ window.BARKAN_DATA = {
       },
       {
        "similarity": 0.89,
-       "inline": "Among the most left-wing[-,-] pro-Palestine activists, however, there [-was-]{+has been+} growing anger [-towards-]{+toward+} Mamdani. [-Mamdani-]{+When+} [-had-]{+asked about it at a press conference, he+} condemned illegal land sales that recruit settlers to the West Bank{+,+} [-when asked at a press conference. But-]{+but+} he [-hadn-]{+didn+}’t [-issued-]{+issue+} a separate [-social media-]{+social-media+} post or statement, [-like-]{+as+} he [-did-]{+had+} for Hamas. Activists noticed and weren’t especially pleased . A small but vocal segment in this movement has already soured on Mamdani, believing [-that -]he has capitulated too much, too soon to pro-Israel politicians and advocates."
+       "inline": "Among the most left-wing[-,-] pro-Palestine activists, however, there [-was-]{+has been+} growing anger [-towards-]{+toward+} Mamdani. [-Mamdani-]{+When+} [-had-]{+asked about it at a press conference, he+} condemned illegal land sales that recruit settlers to the West Bank{+,+} [-when asked at a press conference. But-]{+but+} he [-hadn’t-]{+didn’t+} [-issued-]{+issue+} a separate [-social media-]{+social-media+} post or statement, [-like-]{+as+} he [-did-]{+had+} for Hamas. Activists noticed and weren’t especially pleased . A small but vocal segment in this movement has already soured on Mamdani, believing [-that -]he has capitulated too much, too soon to pro-Israel politicians and advocates."
       },
       {
        "similarity": 0.98,
@@ -1420,16 +1431,18 @@ window.BARKAN_DATA = {
       },
       {
        "similarity": 0.97,
-       "inline": "The big question is what happens when another flare-up or media controversy forces Mamdani to speak more directly and forcefully [-onIsrael-]{+on Israel+} and Gaza. Will he[-,-] at some point[-,-] have to issue a statement that makes it abundantly clear he’s against the illegal land seizures while deeming Hamas a terrorist organization? He[-’s-]{+ has+} already said he[-’d-]{+ would+} discourage the use of the phrase “globalize the intifada{+,+}” and he can no longer be {+unequivocally +}described[-, unequivocally,-] as an anti-Zionist. Is this middle ground the safest space for him — to[- both-] keep his pro-Palestine supporters in his corner while appeasing the more moderate backers of Israel who view him with deep suspicion? His balancing act has only just begun."
+       "inline": "The big question is what happens when another flare-up or media controversy forces Mamdani to speak more directly and forcefully [-onIsrael-]{+on Israel+} and Gaza. Will he[-,-] at some point[-,-] have to issue a statement that makes it abundantly clear he’s against the illegal land seizures while deeming Hamas a terrorist organization? [-He’s-]{+He has+} already said [-he’d-]{+he would+} discourage the use of the phrase “globalize the intifada{+,+}” and he can no longer be {+unequivocally +}described[-, unequivocally,-] as an anti-Zionist. Is this middle ground the safest space for him — to[- both-] keep his pro-Palestine supporters in his corner while appeasing the more moderate backers of Israel who view him with deep suspicion? His balancing act has only just begun."
       }
      ]
     }
    ],
-   "linkDelta": [],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [],
+   "latestTimestamp": "20260829052006",
+   "latestUrl": "https://web.archive.org/web/20260829052006/https://nymag.com/intelligencer/article/mamdani-israel-palestine-balancing-act.html"
   },
   {
    "id": "013",
@@ -1511,11 +1524,13 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [],
+   "latestTimestamp": "20260829052106",
+   "latestUrl": "https://web.archive.org/web/20260829052106/https://nymag.com/intelligencer/article/the-democratic-party-is-making-a-big-mistake.html"
   },
   {
    "id": "014",
@@ -1597,17 +1612,22 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "ADDED",
-     "anchor": "writes",
-     "url": "https://www.axios.com/2025/12/22/60-minutes-pulls-segment-trump-bari-weiss"
-    }
-   ],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "added",
+     "url": "https://www.axios.com/2025/12/22/60-minutes-pulls-segment-trump-bari-weiss",
+     "old": [],
+     "new": [
+      "writes"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829052303",
+   "latestUrl": "https://web.archive.org/web/20260829052303/https://nymag.com/intelligencer/article/bari-weiss-60-minutes-cbs-trump-ellison.html"
   },
   {
    "id": "015",
@@ -1685,22 +1705,24 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "as many as",
-     "url": "https://www.nytimes.com/2025/11/11/us/politics/aircraft-carrier-moves-into-the-caribbean-as-us-confronts-venezuela.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "reported",
-     "url": "https://www.nytimes.com/2025/11/11/us/politics/aircraft-carrier-moves-into-the-caribbean-as-us-confronts-venezuela.html"
-    }
-   ],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "reworded",
+     "url": "https://www.nytimes.com/2025/11/11/us/politics/aircraft-carrier-moves-into-the-caribbean-as-us-confronts-venezuela.html",
+     "old": [
+      "as many as"
+     ],
+     "new": [
+      "reported"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829052552",
+   "latestUrl": "https://web.archive.org/web/20260829052552/https://nymag.com/intelligencer/article/marco-rubio-is-more-dangerous-than-pete-hegseth.html"
   },
   {
    "id": "016",
@@ -1810,27 +1832,38 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "ADDED",
-     "anchor": "19 high-risk countries",
-     "url": "https://www.whitehouse.gov/presidential-actions/2025/06/restricting-the-entry-of-foreign-nationals-to-protect-the-united-states-from-foreign-terrorists-and-other-national-security-and-public-safety-threats/"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "Per the New York Times",
-     "url": "https://www.nytimes.com/2025/11/27/us/politics/trump-national-guard-shooting.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "a Truth Social post",
-     "url": "https://truthsocial.com/@realDonaldTrump/posts/115625427648743414"
-    }
-   ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "added",
+     "url": "https://truthsocial.com/@realDonaldTrump/posts/115625427648743414",
+     "old": [],
+     "new": [
+      "a Truth Social post"
+     ]
+    },
+    {
+     "kind": "added",
+     "url": "https://www.nytimes.com/2025/11/27/us/politics/trump-national-guard-shooting.html",
+     "old": [],
+     "new": [
+      "Per the New York Times"
+     ]
+    },
+    {
+     "kind": "added",
+     "url": "https://www.whitehouse.gov/presidential-actions/2025/06/restricting-the-entry-of-foreign-nationals-to-protect-the-united-states-from-foreign-terrorists-and-other-national-security-and-public-safety-threats/",
+     "old": [],
+     "new": [
+      "19 high-risk countries"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829052658",
+   "latestUrl": "https://web.archive.org/web/20260829052658/https://nymag.com/intelligencer/article/trumps-exploitation-of-national-guard-shooting-will-fail.html"
   },
   {
    "id": "017",
@@ -1900,22 +1933,30 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "likely uttered",
-     "url": "https://www.nbcnews.com/news/world/evidence-based-world-flna1b8216559"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "Karl Rove",
-     "url": "https://substack.com/redirect/06b4f42b-f507-4367-87f1-4660a97cdc91?j=eyJ1IjoiMzN6ZjkifQ.pGkPk2enJw718Nt9HJ5gdDLjMUm3QGSXaadrwYfMmOc"
-    }
-   ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "removed",
+     "url": "https://www.nbcnews.com/news/world/evidence-based-world-flna1b8216559",
+     "old": [
+      "likely uttered"
+     ],
+     "new": []
+    },
+    {
+     "kind": "added",
+     "url": "https://substack.com/redirect/06b4f42b-f507-4367-87f1-4660a97cdc91?j=eyJ1IjoiMzN6ZjkifQ.pGkPk2enJw718Nt9HJ5gdDLjMUm3QGSXaadrwYfMmOc",
+     "old": [],
+     "new": [
+      "Karl Rove"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829052809",
+   "latestUrl": "https://web.archive.org/web/20260829052809/https://nymag.com/intelligencer/article/dick-cheney-and-the-false-nostalgia-of-the-good-republicans.html"
   },
   {
    "id": "018",
@@ -2032,7 +2073,7 @@ window.BARKAN_DATA = {
       },
       {
        "similarity": 0.67,
-       "inline": "[-The targeting of Venezuela may be a way for certain high-ranking officials in the MAGA realm, including Secretary of State Marco Rubio, to steer military action away from Mexico. -]In April, the Trump administration weighed launching drone strikes on Mexican drug cartels, which, if pursued in earnest, would severely damage trade relations and cooperation on migration and security and lead, in every sense, to a full-blown international crisis with a border country. But while Mexico is deeply connected with America’s synthetic drug trade, the focus on Venezuela makes no sense. [-At best, Venezuela-]{+It+} functions as a transit country for [-a-]{+roughly+} [-small amount-]{+10-13%+} of Colombian cocaine[-.-]{+,+} [-Trump-]{+per the Times , and+} is [-claiming-]{+not+} [-each-]{+a producer of fentanyl, the primary driver of overdoses. The president’s claim that an obliterated+} boat [-bombed in the Caribbean is responsible, somehow, for the deaths of-]{+saves+} 25,000 [-Americans,-]{+American+} [-although-]{+lives+} [-it-]{+just doesn+}’[-s-]{+t+} [-fentanyl-]{+hold+} [-causing overdoses in the U-]{+water+}.[-S. Neither Venezuela nor Colombia produce fentanyl.-]"
+       "inline": "[-The targeting of Venezuela may be a way for certain high-ranking officials in the MAGA realm, including Secretary of State Marco Rubio, to steer military action away from Mexico. -]In April, the Trump administration weighed launching drone strikes on Mexican drug cartels, which, if pursued in earnest, would severely damage trade relations and cooperation on migration and security and lead, in every sense, to a full-blown international crisis with a border country. But while Mexico is deeply connected with America’s synthetic drug trade, the focus on Venezuela makes no sense. [-At best, Venezuela-]{+It+} functions as a transit country for [-a-]{+roughly+} [-small amount-]{+10-13%+} of Colombian cocaine[-.-]{+,+} [-Trump-]{+per the Times , and+} is [-claiming-]{+not+} [-each-]{+a producer of fentanyl, the primary driver of overdoses. The president’s claim that an obliterated+} boat [-bombed in the Caribbean is responsible, somehow, for the deaths of-]{+saves+} 25,000 [-Americans,-]{+American+} [-although-]{+lives+} [-it’s-]{+just+} [-fentanyl-]{+doesn’t+} [-causing-]{+hold+} [-overdoses in the U-]{+water+}.[-S. Neither Venezuela nor Colombia produce fentanyl.-]"
       },
       {
        "similarity": 0.88,
@@ -2069,42 +2110,62 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "authorized",
-     "url": "https://www.nytimes.com/2025/10/15/us/politics/trump-covert-cia-action-venezuela.html?ref=compactmag.com"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "small amount",
-     "url": "https://www.nytimes.com/2025/09/03/world/americas/venezuela-drug-boat-trump-us.html?ref=compactmag.com"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "weighed",
-     "url": "https://www.nbcnews.com/politics/national-security/trump-administration-weighs-drone-strikes-mexican-cartels-rcna198930?ref=compactmag.com"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "10-13%",
-     "url": "https://www.nytimes.com/2025/09/03/world/americas/venezuela-drug-boat-trump-us.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "authorized",
-     "url": "https://www.nytimes.com/2025/10/15/us/politics/trump-covert-cia-action-venezuela.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "weighed",
-     "url": "https://www.nbcnews.com/politics/national-security/trump-administration-weighs-drone-strikes-mexican-cartels-rcna198930"
-    }
-   ],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "removed",
+     "url": "https://www.nbcnews.com/politics/national-security/trump-administration-weighs-drone-strikes-mexican-cartels-rcna198930?ref=compactmag.com",
+     "old": [
+      "weighed"
+     ],
+     "new": []
+    },
+    {
+     "kind": "removed",
+     "url": "https://www.nytimes.com/2025/09/03/world/americas/venezuela-drug-boat-trump-us.html?ref=compactmag.com",
+     "old": [
+      "small amount"
+     ],
+     "new": []
+    },
+    {
+     "kind": "removed",
+     "url": "https://www.nytimes.com/2025/10/15/us/politics/trump-covert-cia-action-venezuela.html?ref=compactmag.com",
+     "old": [
+      "authorized"
+     ],
+     "new": []
+    },
+    {
+     "kind": "added",
+     "url": "https://www.nbcnews.com/politics/national-security/trump-administration-weighs-drone-strikes-mexican-cartels-rcna198930",
+     "old": [],
+     "new": [
+      "weighed"
+     ]
+    },
+    {
+     "kind": "added",
+     "url": "https://www.nytimes.com/2025/09/03/world/americas/venezuela-drug-boat-trump-us.html",
+     "old": [],
+     "new": [
+      "10-13%"
+     ]
+    },
+    {
+     "kind": "added",
+     "url": "https://www.nytimes.com/2025/10/15/us/politics/trump-covert-cia-action-venezuela.html",
+     "old": [],
+     "new": [
+      "authorized"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829053022",
+   "latestUrl": "https://web.archive.org/web/20260829053022/https://nymag.com/intelligencer/article/trump-venezuela-maduro-drug-boats.html"
   },
   {
    "id": "019",
@@ -2177,50 +2238,64 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "clamped down",
-     "url": "https://www.reuters.com/world/china/trump-says-chinas-xi-approved-tiktok-deal-2025-09-19/"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "establishing",
-     "url": "https://www.timesofisrael.com/during-war-visit-oracle-ceo-affirms-commitment-to-open-second-data-center-in-israel/"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "established",
-     "url": "https://www.timesofisrael.com/during-war-visit-oracle-ceo-affirms-commitment-to-open-second-data-center-in-israel/"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "has reported",
-     "url": "https://theintercept.com/2025/02/18/oracle-tiktok-israel-palestine-gaza/"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "met",
-     "url": "https://www.i24news.tv/en/news/israel/economy/1687244484-oracle-ceo-discusses-expansion-of-investment-in-israel-with-pm-netanyahu"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "offered",
-     "url": "https://www.haaretz.com/israel-news/2021-09-16/ty-article/.highlight/larry-ellison-netanyahu-trial-witness-offers-ex-pm-seat-on-oracle-board/0000017f-dbd9-d3a5-af7f-fbff9ae80000"
-    }
-   ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "removed",
+     "url": "https://www.reuters.com/world/china/trump-says-chinas-xi-approved-tiktok-deal-2025-09-19/",
+     "old": [
+      "clamped down"
+     ],
+     "new": []
+    },
+    {
+     "kind": "added",
+     "url": "https://theintercept.com/2025/02/18/oracle-tiktok-israel-palestine-gaza/",
+     "old": [],
+     "new": [
+      "has reported"
+     ]
+    },
+    {
+     "kind": "added",
+     "url": "https://www.haaretz.com/israel-news/2021-09-16/ty-article/.highlight/larry-ellison-netanyahu-trial-witness-offers-ex-pm-seat-on-oracle-board/0000017f-dbd9-d3a5-af7f-fbff9ae80000",
+     "old": [],
+     "new": [
+      "offered"
+     ]
+    },
+    {
+     "kind": "added",
+     "url": "https://www.i24news.tv/en/news/israel/economy/1687244484-oracle-ceo-discusses-expansion-of-investment-in-israel-with-pm-netanyahu",
+     "old": [],
+     "new": [
+      "met"
+     ]
+    },
+    {
+     "kind": "reworded",
+     "url": "https://www.timesofisrael.com/during-war-visit-oracle-ceo-affirms-commitment-to-open-second-data-center-in-israel/",
+     "old": [
+      "establishing"
+     ],
+     "new": [
+      "established"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260723002559",
+   "latestUrl": "https://web.archive.org/web/20260723002559/https://nymag.com/intelligencer/article/will-tiktoks-new-owners-censor-pro-palestine-content.html"
   },
   {
    "id": "020",
    "slug": "the-very-good-news-hiding-in-plain-sight-for-democrats",
    "title": "The Very Good News Hiding in Plain Sight for Democrats",
    "liveUrl": "https://nymag.com/intelligencer/article/good-news-democrats-special-elections.html",
-   "archiveUrl": "https://web.archive.org/web/20250917100837/https://nymag.com/intelligencer/article/good-news-democrats-special-elections.html",
-   "archiveTimestamp": "20250917100837",
+   "archiveUrl": "https://web.archive.org/web/20250917102418/https://nymag.com/intelligencer/article/good-news-democrats-special-elections.html",
+   "archiveTimestamp": "20250917102418",
    "status": "ok",
    "changes": [
     {
@@ -2277,45 +2352,64 @@ window.BARKAN_DATA = {
        "links": []
       }
      ],
-     "paired": []
-    }
-   ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "overperformed",
-     "url": "https://www.cnn.com/2025/09/10/politics/democrats-special-elections-trump"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "April Wisconsin Supreme Court",
-     "url": "https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.cnn.com%2F2025%2F04%2F02%2Fpolitics%2Fwisconsin-supreme-court-musk&data=05%7C02%7Ckate.irby%40cnn.com%7Ceb7993dfee0e48f3799408ddf086c955%7C0eb48825e8714459bc72d0ecd68f1f39%7C0%7C0%7C638931183883618245%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=EOULcIJgwWSSJqJifMxovwQtzvQYbbg4N8tMTRxA1k4%3D&reserved=0"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "broke the Iowa GOP’s supermajority",
-     "url": "https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.cnn.com%2F2025%2F08%2F27%2Fpolitics%2Fiowa-democrat-flips-state-senate-seat&data=05%7C02%7Ckate.irby%40cnn.com%7Ceb7993dfee0e48f3799408ddf086c955%7C0eb48825e8714459bc72d0ecd68f1f39%7C0%7C0%7C638931183883655654%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=bfk8LSmNkTtfUfCbSUkOlwAEKXThT8GGz9bTwSt%2FYCA%3D&reserved=0"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "by 16 and 23 points",
-     "url": "https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.cnn.com%2F2025%2F04%2F06%2Fpolitics%2Fflorida-wisconsin-turnout-special-elections%3Fcid%3Dios_app&data=05%7C02%7Ckate.irby%40cnn.com%7Ceb7993dfee0e48f3799408ddf086c955%7C0eb48825e8714459bc72d0ecd68f1f39%7C0%7C0%7C638931183883584736%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=A39r46rEpQ1fgtCUfek8a2knsLbdAx68dgAHwDvp3Y8%3D&reserved=0"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "reports",
-     "url": "https://www.cnn.com/2025/09/10/politics/democrats-special-elections-trump"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "that Trump had won by 15 points",
-     "url": "https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.cnn.com%2F2025%2F03%2F26%2Fpolitics%2Fpennsylvania-state-senate-special-election-malone&data=05%7C02%7Ckate.irby%40cnn.com%7Ceb7993dfee0e48f3799408ddf086c955%7C0eb48825e8714459bc72d0ecd68f1f39%7C0%7C0%7C638931183883639185%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=1BgNeKnIq%2BbOK9c4ohkndlZ%2BKvjl7ATGR%2BPukgrFWXw%3D&reserved=0"
+     "paired": [
+      {
+       "similarity": 0.38,
+       "inline": "[-Beyond the success in Virginia, Democrats also overperformed by 16 and 23 points in a pair of Florida special congressional elections in April. They won, that same month, a high-profile statewide race for a state-supreme-court seat in Wisconsin, where Trump was triumphant last year. Local races have been a boon too. Democrats flipped two Iowa state-senate districts that Trump carried by double digits and took a Pennsylvania state-senate seat that had a 15-point Trump margin. -]All of this points to a strong performance in the midterm next year, when Democrats, who only trail the GOP by six seats, could easily flip the House."
+      }
+     ]
     }
    ],
    "dropped": {
-    "notice": 1,
+    "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "added",
+     "url": "https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.cnn.com%2F2025%2F03%2F26%2Fpolitics%2Fpennsylvania-state-senate-special-election-malone&data=05%7C02%7Ckate.irby%40cnn.com%7Ceb7993dfee0e48f3799408ddf086c955%7C0eb48825e8714459bc72d0ecd68f1f39%7C0%7C0%7C638931183883639185%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=1BgNeKnIq%2BbOK9c4ohkndlZ%2BKvjl7ATGR%2BPukgrFWXw%3D&reserved=0",
+     "old": [],
+     "new": [
+      "that Trump had won by 15 points"
+     ]
+    },
+    {
+     "kind": "added",
+     "url": "https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.cnn.com%2F2025%2F04%2F02%2Fpolitics%2Fwisconsin-supreme-court-musk&data=05%7C02%7Ckate.irby%40cnn.com%7Ceb7993dfee0e48f3799408ddf086c955%7C0eb48825e8714459bc72d0ecd68f1f39%7C0%7C0%7C638931183883618245%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=EOULcIJgwWSSJqJifMxovwQtzvQYbbg4N8tMTRxA1k4%3D&reserved=0",
+     "old": [],
+     "new": [
+      "April Wisconsin Supreme Court"
+     ]
+    },
+    {
+     "kind": "added",
+     "url": "https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.cnn.com%2F2025%2F04%2F06%2Fpolitics%2Fflorida-wisconsin-turnout-special-elections%3Fcid%3Dios_app&data=05%7C02%7Ckate.irby%40cnn.com%7Ceb7993dfee0e48f3799408ddf086c955%7C0eb48825e8714459bc72d0ecd68f1f39%7C0%7C0%7C638931183883584736%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=A39r46rEpQ1fgtCUfek8a2knsLbdAx68dgAHwDvp3Y8%3D&reserved=0",
+     "old": [],
+     "new": [
+      "by 16 and 23 points"
+     ]
+    },
+    {
+     "kind": "added",
+     "url": "https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.cnn.com%2F2025%2F08%2F27%2Fpolitics%2Fiowa-democrat-flips-state-senate-seat&data=05%7C02%7Ckate.irby%40cnn.com%7Ceb7993dfee0e48f3799408ddf086c955%7C0eb48825e8714459bc72d0ecd68f1f39%7C0%7C0%7C638931183883655654%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=bfk8LSmNkTtfUfCbSUkOlwAEKXThT8GGz9bTwSt%2FYCA%3D&reserved=0",
+     "old": [],
+     "new": [
+      "broke the Iowa GOP’s supermajority"
+     ]
+    },
+    {
+     "kind": "reworded",
+     "url": "https://www.cnn.com/2025/09/10/politics/democrats-special-elections-trump",
+     "old": [
+      "overperformed"
+     ],
+     "new": [
+      "reports"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829053302",
+   "latestUrl": "https://web.archive.org/web/20260829053302/https://nymag.com/intelligencer/article/good-news-democrats-special-elections.html"
   },
   {
    "id": "021",
@@ -2436,17 +2530,22 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "ADDED",
-     "anchor": "revisits the history of the Fed",
-     "url": "https://www.thebignewsletter.com/p/why-isnt-wall-street-upset-over-the"
-    }
-   ],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "added",
+     "url": "https://www.thebignewsletter.com/p/why-isnt-wall-street-upset-over-the",
+     "old": [],
+     "new": [
+      "revisits the history of the Fed"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829053407",
+   "latestUrl": "https://web.archive.org/web/20260829053407/https://nymag.com/intelligencer/article/trump-is-not-totally-wrong-about-the-federal-reserve.html"
   },
   {
    "id": "022",
@@ -2502,17 +2601,22 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
+   "dropped": {
+    "notice": 0,
+    "sidebar": 0
+   },
+   "linkChanges": [
     {
-     "op": "ADDED",
-     "anchor": "the New York Times reports",
-     "url": "https://www.nytimes.com/live/2025/08/11/us/trump-news/heres-the-latest?smid=url-share"
+     "kind": "added",
+     "url": "https://www.nytimes.com/live/2025/08/11/us/trump-news/heres-the-latest?smid=url-share",
+     "old": [],
+     "new": [
+      "the New York Times reports"
+     ]
     }
    ],
-   "dropped": {
-    "notice": 1,
-    "sidebar": 0
-   }
+   "latestTimestamp": "20260829053453",
+   "latestUrl": "https://web.archive.org/web/20260829053453/https://nymag.com/intelligencer/article/the-dark-reality-of-trumps-d-c-takeover.html"
   },
   {
    "id": "023",
@@ -2529,7 +2633,7 @@ window.BARKAN_DATA = {
      "old": [
       {
        "tag": "p",
-       "text": "The New York Times reported yesterday that Trump had discussed the mayoral race in a phone call with Cuomo, a politician he has known for many decades. The two men have long been at odds but share a Queens lineage — a decade apart in age, they grew up only a few miles from each other — and the awareness of what it’s like to rise to prominence in the shadow of a powerful father. Trump, according to the Times, had asked a Republican congressman, Mike Lawler, about who among Mayor Eric Adams , Cuomo, and Sliwa has the best chance of defeating Mamdani, the 33-year-old Democratic Socialist who deeply unsettled the city’s elite by beating Cuomo in the June primary. Trump has also reportedly been briefed on the race by Mark Penn, a prominent pollster who worked for the Clintons, and Andrew Stein, a former City Council president and longtime friend of Trump’s, on polling that showed Cuomo could still be competitive as an independent candidate.",
+       "text": "The New York Times reported yesterday that Trump had discussed the mayoral race in a phone call with Cuomo, a politician he has known for many decades. The two men have long been at odds but share a Queens lineage — a decade apart in age, they grew up only a few miles from each other — and the awareness of what it’s like to rise to prominence in the shadow of a powerful father. Trump, according to the Times , had asked a Republican congressman, Mike Lawler, about who among Mayor Eric Adams , Cuomo, and Sliwa has the best chance of defeating Mamdani, the 33-year-old Democratic Socialist who deeply unsettled the city’s elite by beating Cuomo in the June primary. Trump has also reportedly been briefed on the race by Mark Penn, a prominent pollster who worked for the Clintons, and Andrew Stein, a former City Council president and longtime friend of Trump’s, on polling that showed Cuomo could still be competitive as an independent candidate.",
        "links": [
         {
          "anchor": "New York Times reported",
@@ -2580,7 +2684,7 @@ window.BARKAN_DATA = {
      "new": [
       {
        "tag": "p",
-       "text": "The New York Times reported yesterday that Trump had discussed the mayoral race in a phone call with Cuomo, a politician he has known for many decades. The two men have long been at odds but share a Queens lineage — a decade apart in age, they grew up only a few miles from each other — and the awareness of what it’s like to rise to prominence in the shadow of a powerful father. Trump, according to the Times, had asked a Republican congressman, Mike Lawler, about who among Mayor Eric Adams , Cuomo, and Sliwa has the best chance of defeating Mamdani, the 33-year-old Democratic Socialist who deeply unsettled the city’s elite by beating Cuomo in the June primary. The Times also reports that a pair of prominent Cuomo backers have been in Trump’s ear:",
+       "text": "The New York Times reported yesterday that Trump had discussed the mayoral race in a phone call with Cuomo, a politician he has known for many decades. The two men have long been at odds but share a Queens lineage — a decade apart in age, they grew up only a few miles from each other — and the awareness of what it’s like to rise to prominence in the shadow of a powerful father. Trump, according to the Times , had asked a Republican congressman, Mike Lawler, about who among Mayor Eric Adams , Cuomo, and Sliwa has the best chance of defeating Mamdani, the 33-year-old Democratic Socialist who deeply unsettled the city’s elite by beating Cuomo in the June primary. The Times also reports that a pair of prominent Cuomo backers have been in Trump’s ear:",
        "links": [
         {
          "anchor": "New York Times reported",
@@ -2636,7 +2740,7 @@ window.BARKAN_DATA = {
      "paired": [
       {
        "similarity": 0.84,
-       "inline": "The New York Times reported yesterday that Trump had discussed the mayoral race in a phone call with Cuomo, a politician he has known for many decades. The two men have long been at odds but share a Queens lineage — a decade apart in age, they grew up only a few miles from each other — and the awareness of what it’s like to rise to prominence in the shadow of a powerful father. Trump, according to the Times, had asked a Republican congressman, Mike Lawler, about who among Mayor Eric Adams , Cuomo, and Sliwa has the best chance of defeating Mamdani, the 33-year-old Democratic Socialist who deeply unsettled the city’s elite by beating Cuomo in the June primary. [-Trump-]{+The+} [-has-]{+Times+} also [-reportedly-]{+reports that a pair of prominent Cuomo backers have+} been [-briefed on the race by Mark Penn, a prominent pollster who worked for the Clintons, and Andrew Stein, a former City Council president and longtime friend of-]{+in+} Trump’s[-,-] [-on polling that showed Cuomo could still be competitive as an independent candidate.-]{+ear:+}"
+       "inline": "The New York Times reported yesterday that Trump had discussed the mayoral race in a phone call with Cuomo, a politician he has known for many decades. The two men have long been at odds but share a Queens lineage — a decade apart in age, they grew up only a few miles from each other — and the awareness of what it’s like to rise to prominence in the shadow of a powerful father. Trump, according to the Times , had asked a Republican congressman, Mike Lawler, about who among Mayor Eric Adams , Cuomo, and Sliwa has the best chance of defeating Mamdani, the 33-year-old Democratic Socialist who deeply unsettled the city’s elite by beating Cuomo in the June primary. [-Trump-]{+The+} [-has-]{+Times+} also [-reportedly-]{+reports that a pair of prominent Cuomo backers have+} been [-briefed on the race by Mark Penn, a prominent pollster who worked for the Clintons, and Andrew Stein, a former City Council president and longtime friend of-]{+in+} Trump’s[-,-] [-on polling that showed Cuomo could still be competitive as an independent candidate.-]{+ear:+}"
       },
       {
        "similarity": 0.99,
@@ -2657,15 +2761,30 @@ window.BARKAN_DATA = {
       {
        "similarity": 1.0,
        "inline": "The reality for the anti-Mamdani business leaders and politicians is that they have few, if any, good options for a counterattack. Had they been more organized and recruited a well-regarded centrist into the election many months ago — a Michael [-Bloomberg-like-]{+Bloomberg–like+} contender campaigning as an independent — they’d have more hope. The deadline for creating an independent ballot line and running a candidate, however, [-is-]{+has+} long passed. This is what they are left with: a mayor who was indicted on corruption charges, a former governor who had to resign in disgrace, and a [-red beret-wearing-]{+red-beret-wearing+} Republican who is more performance artist than serious politician. And now with Trump looming, Mamdani has even more in his arsenal. Cuomo, tarred as MAGA, is going to squirm."
+      },
+      {
+       "similarity": 0.2,
+       "inline": "[-Zohran-]{+The+} [-Mamdani-]{+president+} [-Won-]{+has been briefed by Mark Penn, a pollster who has worked for Bill and Hillary Clinton+}, and [-10-]{+Andrew Stein+},[-000-] [-People-]{+a+} [-Signed-]{+former+} [-Up-]{+New+} [-to-]{+York+} [-Run-]{+City+} [-for-]{+Council+} [-Office-]{+president and decades-long friend of Mr. Trump, on a range of polling that showed Mr. Cuomo could still be competitive as an independent candidate.+}"
       }
      ]
     }
    ],
-   "linkDelta": [],
    "dropped": {
-    "notice": 1,
-    "sidebar": 0
-   }
+    "notice": 0,
+    "sidebar": 4
+   },
+   "linkChanges": [
+    {
+     "kind": "removed",
+     "url": "https://nymag.com/intelligencer/article/mamdani-says-cuomos-call-with-trump-is-disqualifying.html",
+     "old": [
+      "Mamdani Says Cuomo’s Call With Trump Is ‘Disqualifying’"
+     ],
+     "new": []
+    }
+   ],
+   "latestTimestamp": "20260829053558",
+   "latestUrl": "https://web.archive.org/web/20260829053558/https://nymag.com/intelligencer/article/will-trump-help-andrew-cuomo-beat-zohran-mamdani.html"
   },
   {
    "id": "024",
@@ -2706,11 +2825,13 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [],
    "dropped": {
-    "notice": 1,
+    "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [],
+   "latestTimestamp": "20251101105659",
+   "latestUrl": "https://web.archive.org/web/20251101105659/https://nymag.com/intelligencer/article/dnc-may-not-criticize-biden-harris-in-2024-autopsy.html"
   },
   {
    "id": "025",
@@ -2761,11 +2882,13 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [],
    "dropped": {
-    "notice": 1,
+    "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [],
+   "latestTimestamp": "20260829053824",
+   "latestUrl": "https://web.archive.org/web/20260829053824/https://nymag.com/intelligencer/article/nebraska-senate-candidate-dan-osborn-could-revive-democrats.html"
   },
   {
    "id": "026",
@@ -2847,6 +2970,14 @@ window.BARKAN_DATA = {
       {
        "similarity": 0.79,
        "inline": "The Republican reconciliation package significantly changes a tax law that once allowed gamblers to write off 100 percent of their losses against their winnings. Until now, {+as Joe Pompliano explains on the “Huddle Up” Substack, +}someone who won $100,000 in a year and also had losses of $100,000 would pay {+“+}no taxes on their gambling activity.{+”+} For professional high-stakes gamblers, this made wagering worthwhile because significant losses wouldn’t necessarily prove crushing come tax season. Now, thanks to Trump, gambling-loss deductions will be capped at 90 percent beginning [-next-]{+in+} [-year-]{+2026+}.{+ At first blush, this might not seem terribly significant. But Pompliano notes how that $100,000 gambler will now be taxed as if they made $10,000 in profits, paying out $2,400 in federal taxes with a 24 percent federal tax rate.+}"
+      },
+      {
+       "similarity": 0.39,
+       "inline": "The whole gambling industry, one way or another, may come in for a drubbing. [-Recreational-]{+Pompliano+} [-gamblers-]{+explains+} [-will-]{+the+} [-face-]{+mechanics+} [-worse-]{+of+} [-odds-]{+how+} [-and access fewer large-money jackpots. Casinos and sportsbooks-]{+this+} could [-see their overall volume plummet, and states like New York and New Jersey that have reaped tax revenue from online sports betting may have to readjust their economic forecasts.-]{+happen:+}"
+      },
+      {
+       "similarity": 0.24,
+       "inline": "[-This-]{+Professional+} [-may happen-]{+gamblers+}, [-in part, because the professional or-]{+particularly+} “sharp” [-gamblers-]{+bettors,+} [-who-]{+play+} [-will-]{+a+} [-be-]{+crucial+} [-hit-]{+role+} [-with-]{+in+} [-much higher tax bills help maintain-]{+maintaining+} efficient betting markets[-,-] [-as-]{+that+} [-Joe-]{+most+} [-Pompliano-]{+casual+} [-explains-]{+bettors don’t understand+}. [-A-]{+Sharp+} [-sharp-]{+bettors+} [-gambler-]{+are skilled professionals who+} consistently [-wins-]{+win+} around 55[- percent-]{+%+} of their bets[-,-]{+ —+} a{+ seemingly+} modest edge that requires [-betting-]{+massive+} [-very-]{+volume+} [-large-]{+for+} [-amounts-]{+them to generate sustainable profits. Sharp bettors are the backbone+} of [-money-]{+the+} [-over-]{+sports+} [-time-]{+betting+} [-to make a comfortable living-]{+economy+}. [-These gamblers-]{+They+} help sportsbooks[- like FanDuel and DraftKings-] set accurate lines{+, provide liquidity,+} and fund million-dollar prize pools.{+ Removing these players due to a flawed tax law could trigger a cascade of adverse effects. For example, if professional gamblers shift a significant portion of their volume offshore, liquidity on regulated exchanges would decline. Daily Fantasy Sports (DFS) contests would also lose the whales who fill out the majority of their entries, meaning prize pools would be smaller for everyone else (as data shows that 91% DFS profits are won by just 1.3% of players). And without sharp action helping accurate lines, sportsbooks will mitigate their risk by widening odds/spreads an increasing the vig (their cut), making it so that recreational bettors have to pay more to play than before. It’s easy to see how this can cause a death spiral — professional gamblers head offshore, markets become less efficient due to the decline in volume, DFS prize pools shrink, recreational players lose interest as products become less attractive and eventually, states are left watching as the federal government takes their tax revenue.+}"
       }
      ]
     },
@@ -2885,27 +3016,32 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "as Joe Pompliano explains.",
-     "url": "https://huddleup.substack.com/p/the-new-law-that-could-kill-legal"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "deeply",
-     "url": "https://nymag.com/intelligencer/2022/10/politicans-are-getting-hooked-on-mobile-sports-betting.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "as Joe Pompliano explains",
-     "url": "https://huddleup.substack.com/p/the-new-law-that-could-kill-legal"
-    }
-   ],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "removed",
+     "url": "https://nymag.com/intelligencer/2022/10/politicans-are-getting-hooked-on-mobile-sports-betting.html",
+     "old": [
+      "deeply"
+     ],
+     "new": []
+    },
+    {
+     "kind": "reworded",
+     "url": "https://huddleup.substack.com/p/the-new-law-that-could-kill-legal",
+     "old": [
+      "as Joe Pompliano explains."
+     ],
+     "new": [
+      "as Joe Pompliano explains"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829053928",
+   "latestUrl": "https://web.archive.org/web/20260829053928/https://nymag.com/intelligencer/article/trumps-big-beautiful-bill-act-could-gut-gambling-industry.html"
   },
   {
    "id": "027",
@@ -2963,27 +3099,32 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
+   "dropped": {
+    "notice": 0,
+    "sidebar": 0
+   },
+   "linkChanges": [
     {
-     "op": "REMOVED",
-     "anchor": "According to internal communications",
-     "url": "https://www.military.com/daily-news/2025/06/11/bragg-soldiers-who-cheered-trumps-political-attacks-while-uniform-were-checked-allegiance-appearance.html"
+     "kind": "added",
+     "url": "http://military.com",
+     "old": [],
+     "new": [
+      "Military.com"
+     ]
     },
     {
-     "op": "ADDED",
-     "anchor": "Internal communications",
-     "url": "https://www.military.com/daily-news/2025/06/11/bragg-soldiers-who-cheered-trumps-political-attacks-while-uniform-were-checked-allegiance-appearance.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "Military.com",
-     "url": "http://military.com"
+     "kind": "reworded",
+     "url": "https://www.military.com/daily-news/2025/06/11/bragg-soldiers-who-cheered-trumps-political-attacks-while-uniform-were-checked-allegiance-appearance.html",
+     "old": [
+      "According to internal communications"
+     ],
+     "new": [
+      "Internal communications"
+     ]
     }
    ],
-   "dropped": {
-    "notice": 1,
-    "sidebar": 0
-   }
+   "latestTimestamp": "20260829054141",
+   "latestUrl": "https://web.archive.org/web/20260829054141/https://nymag.com/intelligencer/article/trump-ice-protests-national-guard-la.html"
   },
   {
    "id": "028",
@@ -3034,7 +3175,7 @@ window.BARKAN_DATA = {
       },
       {
        "tag": "p",
-       "text": "Also, as the New York Times’ Theodore Schleifer reported last month :",
+       "text": "Also, as the New York Times ’ Theodore Schleifer reported last month :",
        "links": [
         {
          "anchor": "reported last month",
@@ -3061,22 +3202,30 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
+   "dropped": {
+    "notice": 0,
+    "sidebar": 0
+   },
+   "linkChanges": [
     {
-     "op": "REMOVED",
-     "anchor": "gobbled up",
-     "url": "https://www.nytimes.com/2025/05/12/us/trump-qatar-jet-plane.html"
+     "kind": "removed",
+     "url": "https://www.nytimes.com/2025/05/12/us/trump-qatar-jet-plane.html",
+     "old": [
+      "gobbled up"
+     ],
+     "new": []
     },
     {
-     "op": "ADDED",
-     "anchor": "reported last month",
-     "url": "https://www.nytimes.com/2025/04/20/us/politics/trump-inauguration-donors.html"
+     "kind": "added",
+     "url": "https://www.nytimes.com/2025/04/20/us/politics/trump-inauguration-donors.html",
+     "old": [],
+     "new": [
+      "reported last month"
+     ]
     }
    ],
-   "dropped": {
-    "notice": 1,
-    "sidebar": 0
-   }
+   "latestTimestamp": "20260829054330",
+   "latestUrl": "https://web.archive.org/web/20260829054330/https://nymag.com/intelligencer/article/qatar-plane-trump-corruption.html"
   },
   {
    "id": "029",
@@ -3126,17 +3275,22 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
+   "dropped": {
+    "notice": 0,
+    "sidebar": 0
+   },
+   "linkChanges": [
     {
-     "op": "REMOVED",
-     "anchor": "hosted",
-     "url": "https://apnews.com/article/biden-tiktok-influencers-white-house-6faa12d3e466124991f72fb547f4844c?utm_source=UnHerd+Today&utm_campaign=3273dbaa9e-area_47_week_5_COPY_01&utm_medium=email&utm_term=0_-fbbac21428-73159360"
+     "kind": "removed",
+     "url": "https://apnews.com/article/biden-tiktok-influencers-white-house-6faa12d3e466124991f72fb547f4844c?utm_source=UnHerd+Today&utm_campaign=3273dbaa9e-area_47_week_5_COPY_01&utm_medium=email&utm_term=0_-fbbac21428-73159360",
+     "old": [
+      "hosted"
+     ],
+     "new": []
     }
    ],
-   "dropped": {
-    "notice": 1,
-    "sidebar": 0
-   }
+   "latestTimestamp": "20260829054431",
+   "latestUrl": "https://web.archive.org/web/20260829054431/https://nymag.com/intelligencer/article/how-the-white-house-became-a-playground-for-maga-influencers.html"
   },
   {
    "id": "030",
@@ -3177,17 +3331,22 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
+   "dropped": {
+    "notice": 0,
+    "sidebar": 0
+   },
+   "linkChanges": [
     {
-     "op": "ADDED",
-     "anchor": "famously said",
-     "url": "https://www.glamour.com/story/find-out-who-you-are-and-live-that-truth"
+     "kind": "added",
+     "url": "https://www.glamour.com/story/find-out-who-you-are-and-live-that-truth",
+     "old": [],
+     "new": [
+      "famously said"
+     ]
     }
    ],
-   "dropped": {
-    "notice": 1,
-    "sidebar": 0
-   }
+   "latestTimestamp": "20260829054530",
+   "latestUrl": "https://web.archive.org/web/20260829054530/https://nymag.com/intelligencer/article/democrats-dark-woke-cringey-joe-rogan-fans.html"
   },
   {
    "id": "031",
@@ -3266,7 +3425,7 @@ window.BARKAN_DATA = {
       },
       {
        "tag": "p",
-       "text": "Sanders is appealing the denial from her former boss, according to Rolling Stone. “Arkansas will face significant challenges in assuming full responsibility and achieving an effective recovery from this event,” she wrote. “I have determined that the severity and magnitude of these storms exceed the capabilities of the state and affected local governments to respond adequately. As such, supplemental federal assistance is crucial.”",
+       "text": "Sanders is appealing the denial from her former boss, according to Rolling Stone . “Arkansas will face significant challenges in assuming full responsibility and achieving an effective recovery from this event,” she wrote. “I have determined that the severity and magnitude of these storms exceed the capabilities of the state and affected local governments to respond adequately. As such, supplemental federal assistance is crucial.”",
        "links": [
         {
          "anchor": "according to",
@@ -3290,47 +3449,54 @@ window.BARKAN_DATA = {
       },
       {
        "similarity": 0.97,
-       "inline": "Sanders is appealing the denial from her former boss{+, according to Rolling Stone+}. “Arkansas will face significant challenges in assuming full responsibility and achieving an effective recovery from this event,” she wrote. “I have determined that the severity and magnitude of these storms exceed the capabilities of the state and affected local governments to respond adequately. As such, supplemental federal assistance is crucial.”"
+       "inline": "Sanders is appealing the denial from her former boss{+, according to Rolling Stone +}. “Arkansas will face significant challenges in assuming full responsibility and achieving an effective recovery from this event,” she wrote. “I have determined that the severity and magnitude of these storms exceed the capabilities of the state and affected local governments to respond adequately. As such, supplemental federal assistance is crucial.”"
       }
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "appealing",
-     "url": "https://www.cnn.com/2025/04/23/weather/trump-denied-disaster-aid-arkansas-tornadoes/index.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "have been blocked",
-     "url": "https://www.cnn.com/2025/04/23/weather/trump-denied-disaster-aid-arkansas-tornadoes/index.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "within 48 hours",
-     "url": "https://dps.arkansas.gov/news/fema-adem-distribute-millions-to-arkansans-impacted-from-march-2023-tornadoes/"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "according to",
-     "url": "https://www.rollingstone.com/politics/politics-news/sarah-huckabee-sanders-fema-aid-trump-1235323421/"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "report",
-     "url": "https://arktimes.com/arkansas-blog/2025/04/21/sanders-says-arkansas-in-dire-need-of-federal-assistance-but-trump-says-no"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "reports",
-     "url": "https://www.cnn.com/2025/04/23/weather/trump-denied-disaster-aid-arkansas-tornadoes/index.html"
-    }
-   ],
    "dropped": {
     "notice": 1,
-    "sidebar": 0
-   }
+    "sidebar": 6
+   },
+   "linkChanges": [
+    {
+     "kind": "removed",
+     "url": "https://dps.arkansas.gov/news/fema-adem-distribute-millions-to-arkansans-impacted-from-march-2023-tornadoes/",
+     "old": [
+      "within 48 hours"
+     ],
+     "new": []
+    },
+    {
+     "kind": "added",
+     "url": "https://arktimes.com/arkansas-blog/2025/04/21/sanders-says-arkansas-in-dire-need-of-federal-assistance-but-trump-says-no",
+     "old": [],
+     "new": [
+      "report"
+     ]
+    },
+    {
+     "kind": "added",
+     "url": "https://www.rollingstone.com/politics/politics-news/sarah-huckabee-sanders-fema-aid-trump-1235323421/",
+     "old": [],
+     "new": [
+      "according to"
+     ]
+    },
+    {
+     "kind": "reworded",
+     "url": "https://www.cnn.com/2025/04/23/weather/trump-denied-disaster-aid-arkansas-tornadoes/index.html",
+     "old": [
+      "appealing",
+      "have been blocked"
+     ],
+     "new": [
+      "reports"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829054626",
+   "latestUrl": "https://web.archive.org/web/20260829054626/https://nymag.com/intelligencer/article/trump-huckabee-sanders-fema-arkansas-disaster-relief-denial.html"
   },
   {
    "id": "032",
@@ -3376,22 +3542,30 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "detained",
-     "url": "https://watson.brown.edu/costsofwar/costs/social/rights"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "Costs of War Project",
-     "url": "https://costsofwar.watson.brown.edu/costs/social-political/human-rights-and-civil-liberties"
-    }
-   ],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "removed",
+     "url": "https://watson.brown.edu/costsofwar/costs/social/rights",
+     "old": [
+      "detained"
+     ],
+     "new": []
+    },
+    {
+     "kind": "added",
+     "url": "https://costsofwar.watson.brown.edu/costs/social-political/human-rights-and-civil-liberties",
+     "old": [],
+     "new": [
+      "Costs of War Project"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829054748",
+   "latestUrl": "https://web.archive.org/web/20260829054748/https://nymag.com/intelligencer/article/what-donald-trump-learned-from-george-w-bush.html"
   },
   {
    "id": "033",
@@ -3424,7 +3598,7 @@ window.BARKAN_DATA = {
      "new": [
       {
        "tag": "p",
-       "text": "Hanania is, like Rufo, a warrior of anti-woke, but in some ways even more extreme. As New York’s Zak Cheney-Rice wrote in 2023 , Hanania used a pseudonym for years to post on websites that promoted misogyny and white supremacy. Even if he disavowed that era of his ideological development, he still could be called, based on his public writings, a racist and misogynist. Hanania’s story has a new twist: He is now, unlike Rufo, explicitly anti-Trump. “I think there’s a level of corruption here, a level of blatant sort of corruption to the way government is working that is unprecedented, at least in our recent history,” Hanania recently told Vox. Admitting, on “pure policy,” there was much he liked when he it came to Trump’s war on DEI, “if you’re looking at where the movement is going, [when it comes to] how political movements and how people in power should behave and act in their relationship to truth and the relationship to the rest of society, I think it’s gotten pretty bad.”",
+       "text": "Hanania is, like Rufo, a warrior of anti-woke, but in some ways even more extreme. As New York ’s Zak Cheney-Rice wrote in 2023 , Hanania used a pseudonym for years to post on websites that promoted misogyny and white supremacy. Even if he disavowed that era of his ideological development, he still could be called, based on his public writings, a racist and misogynist. Hanania’s story has a new twist: He is now, unlike Rufo, explicitly anti-Trump. “I think there’s a level of corruption here, a level of blatant sort of corruption to the way government is working that is unprecedented, at least in our recent history,” Hanania recently told Vox. Admitting, on “pure policy,” there was much he liked when he it came to Trump’s war on DEI, “if you’re looking at where the movement is going, [when it comes to] how political movements and how people in power should behave and act in their relationship to truth and the relationship to the rest of society, I think it’s gotten pretty bad.”",
        "links": [
         {
          "anchor": "wrote in 2023",
@@ -3440,27 +3614,29 @@ window.BARKAN_DATA = {
      "paired": [
       {
        "similarity": 0.91,
-       "inline": "Hanania is, like Rufo, a warrior of anti-woke[-.-]{+,+} [-Even more extreme,-]{+but+} in some ways {+even more extreme. As New York’s Zak Cheney-Rice wrote in 2023 +}, [-he-]{+Hanania+} [-once-]{+used+} [-posted-]{+a+} [-pseudonymously-]{+pseudonym for years to post+} on [-several-]{+websites+} [-white-supremacist-]{+that promoted misogyny+} and [-misogynistic-]{+white+} [-websites-]{+supremacy+}. [-If-]{+Even if+} he disavowed that era of his ideological development, he still could be called, based on his public writings, a racist and misogynist. Hanania’s story has a new twist: He is now, unlike Rufo, explicitly anti-Trump. “I think there’s a level of corruption here, a level of blatant sort of corruption to the way government is working that is unprecedented, at least in our recent history,” Hanania recently told Vox. Admitting, on “pure policy,” there was much he liked when he it came to Trump’s war on DEI, “if you’re looking at where the movement is going, [when it comes to] how political movements and how people in power should behave and act in their relationship to truth and the relationship to the rest of society, I think it’s gotten pretty bad.”"
+       "inline": "Hanania is, like Rufo, a warrior of anti-woke[-.-]{+,+} [-Even more extreme,-]{+but+} in some ways {+even more extreme. As New York ’s Zak Cheney-Rice wrote in 2023 +}, [-he-]{+Hanania+} [-once-]{+used+} [-posted-]{+a+} [-pseudonymously-]{+pseudonym for years to post+} on [-several-]{+websites+} [-white-supremacist-]{+that promoted misogyny+} and [-misogynistic-]{+white+} [-websites-]{+supremacy+}. [-If-]{+Even if+} he disavowed that era of his ideological development, he still could be called, based on his public writings, a racist and misogynist. Hanania’s story has a new twist: He is now, unlike Rufo, explicitly anti-Trump. “I think there’s a level of corruption here, a level of blatant sort of corruption to the way government is working that is unprecedented, at least in our recent history,” Hanania recently told Vox. Admitting, on “pure policy,” there was much he liked when he it came to Trump’s war on DEI, “if you’re looking at where the movement is going, [when it comes to] how political movements and how people in power should behave and act in their relationship to truth and the relationship to the rest of society, I think it’s gotten pretty bad.”"
       }
      ]
     }
    ],
-   "linkDelta": [
+   "dropped": {
+    "notice": 0,
+    "sidebar": 0
+   },
+   "linkChanges": [
     {
-     "op": "REMOVED",
-     "anchor": "some ways",
-     "url": "https://nymag.com/intelligencer/2023/08/richard-hanania-racist-message.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "wrote in 2023",
-     "url": "https://nymag.com/intelligencer/2023/08/richard-hanania-racist-message.html"
+     "kind": "reworded",
+     "url": "https://nymag.com/intelligencer/2023/08/richard-hanania-racist-message.html",
+     "old": [
+      "some ways"
+     ],
+     "new": [
+      "wrote in 2023"
+     ]
     }
    ],
-   "dropped": {
-    "notice": 1,
-    "sidebar": 0
-   }
+   "latestTimestamp": "20260829054900",
+   "latestUrl": "https://web.archive.org/web/20260829054900/https://nymag.com/intelligencer/article/anti-woke-christopher-rufo-bari-weiss-richard-hanania.html"
   },
   {
    "id": "034",
@@ -3515,17 +3691,22 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
+   "dropped": {
+    "notice": 0,
+    "sidebar": 0
+   },
+   "linkChanges": [
     {
-     "op": "ADDED",
-     "anchor": "lays out some details",
-     "url": "https://www.axios.com/2025/03/21/columbia-trump-federal-funding-protests"
+     "kind": "added",
+     "url": "https://www.axios.com/2025/03/21/columbia-trump-federal-funding-protests",
+     "old": [],
+     "new": [
+      "lays out some details"
+     ]
     }
    ],
-   "dropped": {
-    "notice": 1,
-    "sidebar": 0
-   }
+   "latestTimestamp": "20260829054953",
+   "latestUrl": "https://web.archive.org/web/20260829054953/https://nymag.com/intelligencer/article/how-columbia-failed-the-donald-trump-test.html"
   },
   {
    "id": "035",
@@ -3554,7 +3735,7 @@ window.BARKAN_DATA = {
      "new": [
       {
        "tag": "p",
-       "text": "Deportation as a political weapon is not new, either. In the early years of the Great Depression, during the presidency of Herbert Hoover, more than a million people of Mexican descent were forcibly sent to Mexico. As many as 60 percent were American citizens, and they were targeted under the nativist assumption that they were responsible for stealing jobs that the stock-market crash had bled away. And as Richard Abel laid out in his 2018 book Law’s Trials: The Performance of US Institutions in the ‘War on Terror,’ such harsh treatment continued in the early 2000s:",
+       "text": "Deportation as a political weapon is not new, either. In the early years of the Great Depression, during the presidency of Herbert Hoover, more than a million people of Mexican descent were forcibly sent to Mexico. As many as 60 percent were American citizens, and they were targeted under the nativist assumption that they were responsible for stealing jobs that the stock-market crash had bled away. And as Richard Abel laid out in his 2018 book Law’s Trials: The Performance of US Institutions in the ‘War on Terror ,’ such harsh treatment continued in the early 2000s:",
        "links": [
         {
          "anchor": "forcibly sent",
@@ -3569,23 +3750,28 @@ window.BARKAN_DATA = {
      ],
      "paired": [
       {
-       "similarity": 0.83,
-       "inline": "Deportation as a political weapon is not new, either. In the early years of the Great Depression, during the presidency of Herbert Hoover, more than a million people of Mexican descent were forcibly sent to Mexico. As many as 60 percent were American citizens, and they were targeted under the nativist assumption that they were responsible for stealing jobs that the stock-market crash had bled away.{+ And as Richard Abel laid out in his 2018 book Law’s Trials: The Performance of US Institutions in the ‘War on Terror,’ such harsh treatment continued in the early 2000s:+}"
+       "similarity": 0.82,
+       "inline": "Deportation as a political weapon is not new, either. In the early years of the Great Depression, during the presidency of Herbert Hoover, more than a million people of Mexican descent were forcibly sent to Mexico. As many as 60 percent were American citizens, and they were targeted under the nativist assumption that they were responsible for stealing jobs that the stock-market crash had bled away.{+ And as Richard Abel laid out in his 2018 book Law’s Trials: The Performance of US Institutions in the ‘War on Terror ,’ such harsh treatment continued in the early 2000s:+}"
       }
      ]
     }
    ],
-   "linkDelta": [
+   "dropped": {
+    "notice": 0,
+    "sidebar": 0
+   },
+   "linkChanges": [
     {
-     "op": "ADDED",
-     "anchor": "laid out",
-     "url": "https://www.amazon.com/dp/1108429750?lv=shuf&channelId=500&plpRedirect=mhFallback"
+     "kind": "added",
+     "url": "https://www.amazon.com/dp/1108429750?lv=shuf&channelId=500&plpRedirect=mhFallback",
+     "old": [],
+     "new": [
+      "laid out"
+     ]
     }
    ],
-   "dropped": {
-    "notice": 1,
-    "sidebar": 0
-   }
+   "latestTimestamp": "20260829055116",
+   "latestUrl": "https://web.archive.org/web/20260829055116/https://nymag.com/intelligencer/article/mahmoud-khalil-arrest-will-backfire-on-trump.html"
   },
   {
    "id": "036",
@@ -3654,37 +3840,51 @@ window.BARKAN_DATA = {
      "paired": [
       {
        "similarity": 0.46,
-       "inline": "The latest evidence of a possible moderate resurgence was a gathering hosted {+last month +}by[- Third Way,-] the centrist Democratic think tank[-,-] [-last-]{+Third+} [-month-]{+Way+}. Unlike the DNC, which has not performed any autopsy of 2024, Third Way produced five pages of takeaways that it believes explain Democratic failure and can plot a path back to power[-. They blame a failure to prioritize economic concerns-], [-an-]{+as+} [-overemphasis-]{+Politico+} [-on identity politics, allowing the “far-left” to define the party, and an attachment to unpopular institutions like academia, the media, and government bureaucracy for Trump-]{+Playbook+}’s [-ascendance.-]{+Adam+} [-Among-]{+Wren+} [-Third-]{+reports+} [-Way’s proposals is a ban on “far-left candidate questionnaires” and a movement “away from the dominance of small-dollar donors whose preferences may not align with the broader electorate.” They argued, too, for Democrats to embrace “patriotism, community, and traditional American imagery” and to “get out of elite circles and into real communities” like tailgates, gun shows, local restaurants, churches. It was time, they proclaimed, to celebrate “moderation, individualism, and masculinity.”-]{+:+}"
+       "inline": "The latest evidence of a possible moderate resurgence was a gathering hosted {+last month +}by[- Third Way,-] the centrist Democratic think tank[-,-] [-last-]{+Third+} [-month-]{+Way+}. Unlike the DNC, which has not performed any autopsy of 2024, Third Way produced five pages of takeaways that it believes explain Democratic failure and can plot a path back to power[-. They blame a failure to prioritize economic concerns-], [-an-]{+as+} [-overemphasis-]{+Politico+} [-on-]{+Playbook’s+} [-identity-]{+Adam+} [-politics,-]{+Wren+} [-allowing-]{+reports+} [-the “far-left” to define the party, and an attachment to unpopular institutions like academia, the media, and government bureaucracy for Trump’s ascendance. Among Third Way’s proposals is a ban on “far-left candidate questionnaires” and a movement “away from the dominance of small-dollar donors whose preferences may not align with the broader electorate.” They argued, too, for Democrats to embrace “patriotism, community, and traditional American imagery” and to “get out of elite circles and into real communities” like tailgates, gun shows, local restaurants, churches. It was time, they proclaimed, to celebrate “moderation, individualism, and masculinity.”-]{+:+}"
       }
      ]
-    }
-   ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "gathering",
-     "url": "https://www.politico.com/newsletters/playbook/2025/03/02/democrats-in-despair-00206883?nname=playbook&nid=0000014f-1646-d88f-a1cf-5f46b7bd0000&nrid=0000014e-f114-dd93-ad7f-f9154ad50001"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "produced",
-     "url": "https://www.politico.com/f/?id=00000195-5511-d4a2-afbf-dd7121940000&nname=playbook&nid=0000014f-1646-d88f-a1cf-5f46b7bd0000&nrid=0000014e-f114-dd93-ad7f-f9154ad50001"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "five pages of takeaways",
-     "url": "https://www.politico.com/f/?id=00000195-5511-d4a2-afbf-dd7121940000"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "reports",
-     "url": "https://www.politico.com/newsletters/playbook/2025/03/02/democrats-in-despair-00206883"
     }
    ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "removed",
+     "url": "https://www.politico.com/f/?id=00000195-5511-d4a2-afbf-dd7121940000&nname=playbook&nid=0000014f-1646-d88f-a1cf-5f46b7bd0000&nrid=0000014e-f114-dd93-ad7f-f9154ad50001",
+     "old": [
+      "produced"
+     ],
+     "new": []
+    },
+    {
+     "kind": "removed",
+     "url": "https://www.politico.com/newsletters/playbook/2025/03/02/democrats-in-despair-00206883?nname=playbook&nid=0000014f-1646-d88f-a1cf-5f46b7bd0000&nrid=0000014e-f114-dd93-ad7f-f9154ad50001",
+     "old": [
+      "gathering"
+     ],
+     "new": []
+    },
+    {
+     "kind": "added",
+     "url": "https://www.politico.com/f/?id=00000195-5511-d4a2-afbf-dd7121940000",
+     "old": [],
+     "new": [
+      "five pages of takeaways"
+     ]
+    },
+    {
+     "kind": "added",
+     "url": "https://www.politico.com/newsletters/playbook/2025/03/02/democrats-in-despair-00206883",
+     "old": [],
+     "new": [
+      "reports"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829055215",
+   "latestUrl": "https://web.archive.org/web/20260829055215/https://nymag.com/intelligencer/article/a-new-moderate-way-forward-for-the-democratic-party.html"
   },
   {
    "id": "037",
@@ -3769,7 +3969,7 @@ window.BARKAN_DATA = {
       },
       {
        "similarity": 0.54,
-       "inline": "[-Greater security issues, as they were during the Cold War, can be hashed out only between Washington and Moscow. -]NATO membership for Ukraine is up to the existing members of NATO, not Ukraine, and each member has a veto. [-It-]{+But+} [-will-]{+Levien+} [-be-]{+points+} [-extraordinarily-]{+out+} [-challenging-]{+another+} [-for-]{+wrinkle:+} [-Zelensky-]{+while+} [-to-]{+Britain+} [-accept-]{+and+} [-a-]{+Europe+} [-compromise-]{+have+} [-agreement unless he tells-]{+raised+} the [-hard-liners in his own country he has no choice but to do what the Americans say. British and European suggestions-]{+idea+} of [-support for-]{+supporting+} Ukraine’s military [-sans-]{+without+} the United States{+’s+} [-—-]{+help,+} [-with-]{+such+} [-European troops guaranteeing a cease-fire —-]{+notions+} are nonsensical{+,+} and [-potentially-]{+will+} [-destructive, making it harder for-]{+make+} Zelensky{+’s+} [-to-]{+task+} [-sell-]{+of selling+} a peace deal{+ more difficult+}."
+       "inline": "[-Greater security issues, as they were during the Cold War, can be hashed out only between Washington and Moscow. -]NATO membership for Ukraine is up to the existing members of NATO, not Ukraine, and each member has a veto. [-It-]{+But+} [-will-]{+Levien+} [-be-]{+points+} [-extraordinarily-]{+out+} [-challenging-]{+another+} [-for-]{+wrinkle:+} [-Zelensky-]{+while+} [-to-]{+Britain+} [-accept-]{+and+} [-a-]{+Europe+} [-compromise-]{+have+} [-agreement unless he tells-]{+raised+} the [-hard-liners in his own country he has no choice but to do what the Americans say. British and European suggestions-]{+idea+} of [-support for-]{+supporting+} Ukraine’s military [-sans-]{+without+} the United [-States-]{+States’s+} [-—-]{+help,+} [-with-]{+such+} [-European troops guaranteeing a cease-fire —-]{+notions+} are nonsensical{+,+} and [-potentially-]{+will+} [-destructive,-]{+make+} [-making-]{+Zelensky’s+} [-it-]{+task+} [-harder-]{+of+} [-for Zelensky to sell-]{+selling+} a peace deal{+ more difficult+}."
       },
       {
        "similarity": 0.62,
@@ -3778,32 +3978,40 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "dying",
-     "url": "https://www.nytimes.com/2025/01/30/world/europe/north-korea-troops-ukraine-russia.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "has argued.",
-     "url": "https://www.thenation.com/article/world/trump-putin-ukraine-war-peace-diplomacy/"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "failure",
-     "url": "https://archive.ph/o/xu0P2/https://www.reuters.com/graphics/UKRAINE-CRISIS/MAPS/klvygwawavg/"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "recently argued in The Nation",
-     "url": "https://www.thenation.com/article/world/trump-putin-ukraine-war-peace-diplomacy/"
-    }
-   ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "removed",
+     "url": "https://www.nytimes.com/2025/01/30/world/europe/north-korea-troops-ukraine-russia.html",
+     "old": [
+      "dying"
+     ],
+     "new": []
+    },
+    {
+     "kind": "added",
+     "url": "https://archive.ph/o/xu0P2/https://www.reuters.com/graphics/UKRAINE-CRISIS/MAPS/klvygwawavg/",
+     "old": [],
+     "new": [
+      "failure"
+     ]
+    },
+    {
+     "kind": "reworded",
+     "url": "https://www.thenation.com/article/world/trump-putin-ukraine-war-peace-diplomacy/",
+     "old": [
+      "has argued."
+     ],
+     "new": [
+      "recently argued in The Nation"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829055416",
+   "latestUrl": "https://web.archive.org/web/20260829055416/https://nymag.com/intelligencer/article/what-trump-is-getting-right-about-ukraine.html"
   },
   {
    "id": "038",
@@ -3870,41 +4078,6 @@ window.BARKAN_DATA = {
        "tag": "p",
        "text": "Hochul, too, must think about facing voters. Next year she faces a challenging re-election fight, both in the primary, potentially against Representative Ritchie Torres, and in the general election, where she could face Mike Lawler, the popular Republican congressman from the Hudson Valley. To win, she’ll have to consolidate her base in New York City, and that means courting voters who either like Adams or at least don’t want him pushed out against his will before the end of his term. Hochul would love nothing more than for men like Reverend Al Sharpton and Gregory Meeks, the influential Queens congressman, to form a united front for her re-election campaign. Keeping Adams around makes that much more possible. What Hochul wants, most of all, is a long political future.",
        "links": []
-      },
-      {
-       "tag": "h2",
-       "text": "More on mayor adams",
-       "links": []
-      },
-      {
-       "tag": "li",
-       "text": "Hochul Announces She Won’t Remove Adams, Yet: Live Updates",
-       "links": [
-        {
-         "anchor": "Hochul Announces She Won’t Remove Adams, Yet: Live Updates",
-         "url": "https://nymag.com/intelligencer/article/eric-adams-case-justice-department-upheaval-resignations-news-updates.html"
-        }
-       ]
-      },
-      {
-       "tag": "li",
-       "text": "Eric Adams Is Not a Free Man",
-       "links": [
-        {
-         "anchor": "Eric Adams Is Not a Free Man",
-         "url": "https://nymag.com/intelligencer/article/eric-adams-court-trump-justice-department-bove.html"
-        }
-       ]
-      },
-      {
-       "tag": "li",
-       "text": "The Justice Department’s Existential Crisis Is Self-Inflicted",
-       "links": [
-        {
-         "anchor": "The Justice Department’s Existential Crisis Is Self-Inflicted",
-         "url": "https://nymag.com/intelligencer/article/adams-case-existential-crisis-for-trump-justice-department.html"
-        }
-       ]
       }
      ],
      "new": [
@@ -3987,7 +4160,7 @@ window.BARKAN_DATA = {
       },
       {
        "similarity": 0.56,
-       "inline": "[-Her-]{+[Hochul’s]+} [-announcement-]{+proposed+} [-is-]{+changes+} [-a-]{+included+} [-major disappointment to her critics on the left and even some of the mayoral contenders who were hoping for Adams to be dumped. But Hochul had to tread carefully in a mayoral election year, even with pressure mounting on her to take more dramatic action. Instead, she will move to create-]{+creating+} a new state deputy inspector general [-dedicated-]{+focused+} [-to-]{+on+} New York City{+’s+} [-and-]{+operations;+} [-establish-]{+establishing+} a fund for the city comptroller, public advocate and City Council speaker to hire outside counsel to sue the federal government if the mayor [-won’t.-]{+is+} [-She also wants-]{+unwilling+} to [-boost-]{+do+} [-funding-]{+so; and granting additional funds+} for the state{+’s+} comptroller to [-monitor-]{+scrutinize city finances. The governor said she also wanted a legal change to bar+} the [-city and impose a new rule that would bar Adams-]{+mayor+} from firing the head of the city’s Department of Investigation without the approval of the state inspector general.[- These special provisions, which she said should expire at the end of the year, would need legislative signoff. She also reserved her right to remove Adams from office, just not “at this time.”-]"
+       "inline": "[-Her-]{+[Hochul’s]+} [-announcement-]{+proposed+} [-is-]{+changes+} [-a-]{+included+} [-major disappointment to her critics on the left and even some of the mayoral contenders who were hoping for Adams to be dumped. But Hochul had to tread carefully in a mayoral election year, even with pressure mounting on her to take more dramatic action. Instead, she will move to create-]{+creating+} a new state deputy inspector general [-dedicated-]{+focused+} [-to-]{+on+} New York [-City-]{+City’s+} [-and-]{+operations;+} [-establish-]{+establishing+} a fund for the city comptroller, public advocate and City Council speaker to hire outside counsel to sue the federal government if the mayor [-won’t.-]{+is+} [-She also wants-]{+unwilling+} to [-boost-]{+do+} [-funding-]{+so; and granting additional funds+} for the [-state-]{+state’s+} comptroller to [-monitor-]{+scrutinize city finances. The governor said she also wanted a legal change to bar+} the [-city and impose a new rule that would bar Adams-]{+mayor+} from firing the head of the city’s Department of Investigation without the approval of the state inspector general.[- These special provisions, which she said should expire at the end of the year, would need legislative signoff. She also reserved her right to remove Adams from office, just not “at this time.”-]"
       },
       {
        "similarity": 0.99,
@@ -4016,37 +4189,40 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "Eric Adams Is Not a Free Man",
-     "url": "https://nymag.com/intelligencer/article/eric-adams-court-trump-justice-department-bove.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "Hochul Announces She Won’t Remove Adams, Yet: Live Updates",
-     "url": "https://nymag.com/intelligencer/article/eric-adams-case-justice-department-upheaval-resignations-news-updates.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "The Justice Department’s Existential Crisis Is Self-Inflicted",
-     "url": "https://nymag.com/intelligencer/article/adams-case-existential-crisis-for-trump-justice-department.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "reports",
-     "url": "https://www.nytimes.com/2025/02/20/nyregion/hochul-adams-nyc-oversight.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "said",
-     "url": "https://nymag.com/intelligencer/article/eric-adams-case-justice-department-upheaval-resignations-news-updates.html"
-    }
-   ],
    "dropped": {
     "notice": 0,
-    "sidebar": 0
-   }
+    "sidebar": 4
+   },
+   "linkChanges": [
+    {
+     "kind": "removed",
+     "url": "https://nymag.com/intelligencer/article/eric-adams-court-trump-justice-department-bove.html",
+     "old": [
+      "Eric Adams Is Not a Free Man"
+     ],
+     "new": []
+    },
+    {
+     "kind": "added",
+     "url": "https://www.nytimes.com/2025/02/20/nyregion/hochul-adams-nyc-oversight.html",
+     "old": [],
+     "new": [
+      "reports"
+     ]
+    },
+    {
+     "kind": "reworded",
+     "url": "https://nymag.com/intelligencer/article/eric-adams-case-justice-department-upheaval-resignations-news-updates.html",
+     "old": [
+      "Hochul Announces She Won’t Remove Adams, Yet: Live Updates"
+     ],
+     "new": [
+      "said"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829081721",
+   "latestUrl": "https://web.archive.org/web/20260829081721/https://nymag.com/intelligencer/article/kathy-hochul-wouldnt-risk-the-cost-of-ousting-eric-adams.html"
   },
   {
    "id": "039",
@@ -4191,7 +4367,7 @@ window.BARKAN_DATA = {
       },
       {
        "similarity": 0.99,
-       "inline": "When Trump turns his attention to legislation, what comes out of his administration might be, by modern Republican standards, rather conventional. On the agenda will be vicious attacks on the social safety net, the likes of which were waged, with limited success, in Trump’s first term. This is Trump’{+s+} version of populism; while he does not, like past Republican [-standard bearers-]{+standard-bearers+}, want to privatize [-social-]{+Social+} [-security-]{+Security+} or gut Medicare, he is happy to aim at slashing other programs that the working class and poor rely upon."
+       "inline": "When Trump turns his attention to legislation, what comes out of his administration might be, by modern Republican standards, rather conventional. On the agenda will be vicious attacks on the social safety net, the likes of which were waged, with limited success, in Trump’s first term. This is [-Trump’-]{+Trump’s+} version of populism; while he does not, like past Republican [-standard bearers-]{+standard-bearers+}, want to privatize [-social-]{+Social+} [-security-]{+Security+} or gut Medicare, he is happy to aim at slashing other programs that the working class and poor rely upon."
       },
       {
        "similarity": 1.0,
@@ -4232,32 +4408,26 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "approve",
-     "url": "https://www.politico.com/live-updates/2025/02/14/congress/what-were-watching-00204280"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "privately considering",
-     "url": "https://www.politico.com/live-updates/2025/02/14/congress/what-were-watching-00204280"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "Politico reports",
-     "url": "https://www.politico.com/live-updates/2025/02/14/congress/what-were-watching-00204280"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "greenlight",
-     "url": "https://www.politico.com/live-updates/2025/02/14/congress/what-were-watching-00204280"
-    }
-   ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "reworded",
+     "url": "https://www.politico.com/live-updates/2025/02/14/congress/what-were-watching-00204280",
+     "old": [
+      "approve",
+      "privately considering"
+     ],
+     "new": [
+      "Politico reports",
+      "greenlight"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829081948",
+   "latestUrl": "https://web.archive.org/web/20260829081948/https://nymag.com/intelligencer/article/doge-trump-congress-mike-johnson.html"
   },
   {
    "id": "040",
@@ -4340,32 +4510,40 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "sent shock waves",
-     "url": "https://www.nytimes.com/2025/02/13/nyregion/danielle-sassoon-quit-eric-adams.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "stinging letter",
-     "url": "https://www.nytimes.com/interactive/2025/02/13/us/doc-annotation-letter-to-bondi.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "Reports the New York Times",
-     "url": "https://www.nytimes.com/2025/02/13/nyregion/danielle-sassoon-quit-eric-adams.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "drop the corruption case against New York City’s mayor",
-     "url": "https://www.nytimes.com/2025/02/10/nyregion/eric-adams-charges-doj-trump.html"
-    }
-   ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "removed",
+     "url": "https://www.nytimes.com/interactive/2025/02/13/us/doc-annotation-letter-to-bondi.html",
+     "old": [
+      "stinging letter"
+     ],
+     "new": []
+    },
+    {
+     "kind": "added",
+     "url": "https://www.nytimes.com/2025/02/10/nyregion/eric-adams-charges-doj-trump.html",
+     "old": [],
+     "new": [
+      "drop the corruption case against New York City’s mayor"
+     ]
+    },
+    {
+     "kind": "reworded",
+     "url": "https://www.nytimes.com/2025/02/13/nyregion/danielle-sassoon-quit-eric-adams.html",
+     "old": [
+      "sent shock waves"
+     ],
+     "new": [
+      "Reports the New York Times"
+     ]
+    }
+   ],
+   "latestTimestamp": "20250628224022",
+   "latestUrl": "https://web.archive.org/web/20250628224022/https://nymag.com/intelligencer/article/kathy-hochul-eric-adams-sdny.html"
   },
   {
    "id": "041",
@@ -4411,11 +4589,13 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [],
+   "latestTimestamp": "20260829082248",
+   "latestUrl": "https://web.archive.org/web/20260829082248/https://nymag.com/intelligencer/article/la-fires-karen-bass-gavin-newsom-olympics.html"
   },
   {
    "id": "042",
@@ -4493,32 +4673,34 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "House censure",
-     "url": "https://www.nytimes.com/2023/12/07/us/politics/jamaal-bowman-censure-fire-alarm.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "YouTube page following conspiracy accounts",
-     "url": "https://sg.news.yahoo.com/squad-rep-youtube-page-conspiracy-083141195.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "House censured",
-     "url": "https://www.nytimes.com/2023/12/07/us/politics/jamaal-bowman-censure-fire-alarm.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "YouTube page was found to be following conspiracy accounts",
-     "url": "https://sg.news.yahoo.com/squad-rep-youtube-page-conspiracy-083141195.html"
-    }
-   ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "reworded",
+     "url": "https://sg.news.yahoo.com/squad-rep-youtube-page-conspiracy-083141195.html",
+     "old": [
+      "YouTube page following conspiracy accounts"
+     ],
+     "new": [
+      "YouTube page was found to be following conspiracy accounts"
+     ]
+    },
+    {
+     "kind": "reworded",
+     "url": "https://www.nytimes.com/2023/12/07/us/politics/jamaal-bowman-censure-fire-alarm.html",
+     "old": [
+      "House censure"
+     ],
+     "new": [
+      "House censured"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829082423",
+   "latestUrl": "https://web.archive.org/web/20260829082423/https://nymag.com/intelligencer/article/bowman-latimer-primary-aipac-result.html"
   },
   {
    "id": "043",
@@ -4644,7 +4826,7 @@ window.BARKAN_DATA = {
      "paired": [
       {
        "similarity": 0.96,
-       "inline": "When news broke that Shohei Ohtani’s interpreter, Ippei Mizuhara, had been accused of stealing $4.5 million from the baseball superstar to pay down gambling debts with a California bookie, it was already one of the more consequential sports stories of the year, rapidly overshadowing March Madness and the NBA playoff push. The wire [-transfer-]{+transfers+} had come to light because the FBI was investigating a man named Matthew [-Boyer-]{+Bowyer+} for running an illicit bookmaking scheme (online gambling isn’t yet legal in California). ESPN and the Los Angeles Times were alerted that Ohtani’s name had surfaced in the investigation; {+Bowyer had received +}two $500,000 payments[- had been wired directly-] from Ohtani’s bank account[- to Boyer-]."
+       "inline": "When news broke that Shohei Ohtani’s interpreter, Ippei Mizuhara, had been accused of stealing $4.5 million from the baseball superstar to pay down gambling debts with a California bookie, it was already one of the more consequential sports stories of the year, rapidly overshadowing March Madness and the NBA playoff push. The wire [-transfer-]{+transfers+} had come to light because the FBI was investigating a man named Matthew [-Boyer-]{+Bowyer+} for running an illicit bookmaking scheme (online gambling isn’t yet legal in California). ESPN and the Los Angeles Times were alerted that Ohtani’s name had surfaced in the investigation; {+Bowyer had received +}two $500,000 payments [-had been wired directly -]from Ohtani’s bank account[- to Boyer-]."
       },
       {
        "similarity": 1.0,
@@ -4652,7 +4834,7 @@ window.BARKAN_DATA = {
       },
       {
        "similarity": 0.52,
-       "inline": "But there are several more twists[- to the story. When Tisha Thompson-], [-ESPN’s-]{+as+} [-investigative-]{+Joe+} [-reporter,-]{+Pompliano+} [-first-]{+lays+} [-started-]{+out+} [-hunting-]{+on+} [-around,-]{+his “Huddle Up” Substack.+} Ohtani’s representatives {+first +}told [-her-]{+Tisha Thompson, the ESPN investigative reporter who has broken much of this story, that+} it was Mizuhara [-betting-]{+making+} [-on-]{+the+} [-sports-]{+bets+} and {+that +}Ohtani [-transferring-]{+had+} [-the-]{+merely+} [-money to cover-]{+covered+} his losses. [-Ohtani’s-]{+But+} [-team-]{+in+} [-then permitted Mizuhara to sit for a 90-minute-]{+an+} interview {+on +}Tuesday[- night.-]{+,+} Mizuhara told ESPN that he [-started-]{+had+} [-placing-]{+met+} [-bets on credit with Boyer after meeting him-]{+Bowyer+} at a[- San Diego-] poker game in [-2021.-]{+San+} [-His-]{+Diego+} [-losses-]{+three+} [-reached-]{+years ago, began placing bets with him on credit, and was down+} $1 million by the end of 2022{+.+} [-and-]{+His+} [-exploded-]{+losses+} [-from-]{+only+} [-there-]{+expanded after that+}.{+ He described himself as “terrible” at gambling.+}"
+       "inline": "But there are several more twists{+,+} [-to-]{+as+} [-the-]{+Joe+} [-story-]{+Pompliano lays out on his “Huddle Up” Substack+}. [-When-]{+Ohtani’s representatives first told+} Tisha Thompson, [-ESPN’s-]{+the ESPN+} investigative reporter{+ who has broken much of this story+}, [-first started hunting around, Ohtani’s representatives told her-]{+that+} it was Mizuhara [-betting-]{+making+} [-on-]{+the+} [-sports-]{+bets+} and {+that +}Ohtani [-transferring-]{+had+} [-the-]{+merely+} [-money to cover-]{+covered+} his losses. [-Ohtani’s-]{+But+} [-team-]{+in+} [-then permitted Mizuhara to sit for a 90-minute-]{+an+} interview {+on +}Tuesday[- night.-]{+,+} Mizuhara told ESPN that he [-started-]{+had+} [-placing-]{+met+} [-bets on credit with Boyer after meeting him-]{+Bowyer+} at a[- San Diego-] poker game in [-2021.-]{+San+} [-His-]{+Diego+} [-losses-]{+three+} [-reached-]{+years ago, began placing bets with him on credit, and was down+} $1 million by the end of 2022{+.+} [-and-]{+His+} [-exploded-]{+losses+} [-from-]{+only+} [-there-]{+expanded after that+}.{+ He described himself as “terrible” at gambling.+}"
       },
       {
        "similarity": 0.28,
@@ -4730,7 +4912,7 @@ window.BARKAN_DATA = {
       },
       {
        "similarity": 1.0,
-       "inline": "For now, there is no evidence that Mizuhara bet on baseball. But what if he did? As prominent sports [-talk show-]{+talk-show+} host and recovering gambling addict Craig Carton pointed out , a problem gambler like Mizuhara could’ve turned to the sport he knows best to make up for his gargantuan losses. If that’s perverse speculation, the rapidly evolving explanations from the Ohtani camp have invited it. Another unsettling question: [-why-]{+Why+} would a bookie like [-Boyer-]{+Bowyer+} extend so much credit to an interpreter who is plainly not rich? Mizuhara reportedly earned between $300,000 to $500,000 annually, a comfortable but not extravagant salary that, in theory, would have made it hard for him to fall into a gambling hole that neared $5 million. Or, at the minimum, it should have made a bookie like [-Boyer-]{+Bowyer+} skeptical: [-it-]{+It+}’s not like Mizuhara was a multimillionaire professional athlete. He just happened to be very close friends with one."
+       "inline": "For now, there is no evidence that Mizuhara bet on baseball. But what if he did? As prominent sports [-talk show-]{+talk-show+} host and recovering gambling addict Craig Carton pointed out , a problem gambler like Mizuhara could’ve turned to the sport he knows best to make up for his gargantuan losses. If that’s perverse speculation, the rapidly evolving explanations from the Ohtani camp have invited it. Another unsettling question: [-why-]{+Why+} would a bookie like [-Boyer-]{+Bowyer+} extend so much credit to an interpreter who is plainly not rich? Mizuhara reportedly earned between $300,000 to $500,000 annually, a comfortable but not extravagant salary that, in theory, would have made it hard for him to fall into a gambling hole that neared $5 million. Or, at the minimum, it should have made a bookie like [-Boyer-]{+Bowyer+} skeptical: [-it’s-]{+It’s+} not like Mizuhara was a multimillionaire professional athlete. He just happened to be very close friends with one."
       }
      ]
     },
@@ -4805,17 +4987,22 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "ADDED",
-     "anchor": "Joe Pompliano lays out",
-     "url": "https://huddleup.substack.com/p/shohei-ohtanis-gambling-story-is"
-    }
-   ],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "added",
+     "url": "https://huddleup.substack.com/p/shohei-ohtanis-gambling-story-is",
+     "old": [],
+     "new": [
+      "Joe Pompliano lays out"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829082630",
+   "latestUrl": "https://web.archive.org/web/20260829082630/https://nymag.com/intelligencer/article/the-shohei-ohtani-translator-gambling-story-doesnt-add-up.html"
   },
   {
    "id": "044",
@@ -5188,11 +5375,11 @@ window.BARKAN_DATA = {
       },
       {
        "similarity": 0.98,
-       "inline": "Gym, like Wu, would be her city’s first female and Asian American mayor. She[- also-] has a crucial link to Johnson through Vallas, who, in addition to running the Chicago schools[- system-], spent a [-half decade-]{+half-decade+} as the executive in charge of Philadelphia’s public schools. Johnson found success in savaging Vallas’s record as[- a-] schools chief, which came with notable triumphs and headline-grabbing controversies that never quite faded. An enthusiastic proponent of charter schools, Vallas clashed with teachers[-’-] unions and [-public school-]{+public-school+} parents in multiple cities[-,-] and found himself running[- up-] against one particularly fierce activist in Philadelphia: Gym."
+       "inline": "Gym, like Wu, would be her city’s first female and Asian American mayor. She[- also-] has a crucial link to Johnson through Vallas, who, in addition to running the Chicago schools[- system-], spent a [-half decade-]{+half-decade+} as the executive in charge of Philadelphia’s public schools. Johnson found success in savaging Vallas’s record as[- a-] schools chief, which came with notable triumphs and headline-grabbing controversies that never quite faded. An enthusiastic proponent of charter schools, Vallas clashed with [-teachers’-]{+teachers+} unions and [-public school-]{+public-school+} parents in multiple cities[-,-] and found himself running[- up-] against one particularly fierce activist in Philadelphia: Gym."
       },
       {
        "similarity": 0.96,
-       "inline": "A decade before [-she-]{+Gym+} was elected to the [-city-]{+City+} [-council-]{+Council+}, [-Gym-]{+she+} was tangling with Vallas [-as-]{+while+} [-the-]{+she was+} leader of Parents United for Public Education, an organization she{+’d+} founded to fight for more [-public school-]{+public-school+} funding. As Vallas allowed the takeover of some public schools by for-profit companies and private nonprofits — and enacted a polarizing punishment regime for {+“+}problematic{+”+} students — he found himself pitted against Gym, a former teacher and newspaper reporter."
+       "inline": "A decade before [-she-]{+Gym+} was elected to the [-city-]{+City+} [-council-]{+Council+}, [-Gym-]{+she+} was tangling with Vallas [-as-]{+while+} [-the-]{+she was+} leader of Parents United for Public Education, an organization [-she-]{+she’d+} founded to fight for more [-public school-]{+public-school+} funding. As Vallas allowed the takeover of some public schools by for-profit companies and private nonprofits — and enacted a polarizing punishment regime for {+“+}problematic{+”+} students — he found himself pitted against Gym, a former teacher and newspaper reporter."
       },
       {
        "similarity": 0.99,
@@ -5220,62 +5407,73 @@ window.BARKAN_DATA = {
       },
       {
        "similarity": 0.99,
-       "inline": "For Adams, a Gym victory might be unnerving. In two years, he’ll face his own [-re-election-]{+reelection+}, and the many left-of-center Democrats who failed to rally around a potent candidate to halt his ascent will have a chance to learn from their 2021 missteps. Adams’{+s+} many strengths — his tremendous fundraising ability, his close ties to the Black [-working-class-]{+working class+} and organized labor — may be fully tested. New York progressives will be on the hunt for their own Brandon Johnson[-,-]{+.+} [-or-]{+Or+} maybe their own Helen Gym."
+       "inline": "For Adams, a Gym victory might be unnerving. In two years, he’ll face his own [-re-election-]{+reelection+}, and the many left-of-center Democrats who failed to rally around a potent candidate to halt his ascent will have a chance to learn from their 2021 missteps. [-Adams’-]{+Adams’s+} many strengths — his tremendous fundraising ability, his close ties to the Black [-working-class-]{+working class+} and organized labor — may be fully tested. New York progressives will be on the hunt for their own Brandon Johnson[-,-]{+.+} [-or-]{+Or+} maybe their own Helen Gym."
       }
      ]
-    }
-   ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "Democratic Socialist of America",
-     "url": "https://nymag.com/intelligencer/2022/06/the-future-of-democratic-socialists-of-america-is-local.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "brutal recall election.",
-     "url": "https://nymag.com/intelligencer/2022/06/chesa-boudin-recall-shows-limits-of-san-francisco-liberalism.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "that she supported.",
-     "url": "https://phlcouncil.com/councilwoman-parker-introduces-historic-charter-change-finally-giving-voters-a-voice-in-eliminating-unconstitutional-stop-and-frisk/"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "were murdered",
-     "url": "https://docs.google.com/document/d/15XbIH7mYjyvZeKbAYIowx9TtCtxyoijuNmFUowYbPPQ/edit"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "Democratic Socialists of America",
-     "url": "https://nymag.com/intelligencer/2022/06/the-future-of-democratic-socialists-of-america-is-local.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "brutal recall election",
-     "url": "https://nymag.com/intelligencer/2022/06/chesa-boudin-recall-shows-limits-of-san-francisco-liberalism.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "reported",
-     "url": "https://www.thenation.com/article/politics/helen-gym-philadelphia-crime-public-safety/"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "she supported",
-     "url": "https://phlcouncil.com/councilwoman-parker-introduces-historic-charter-change-finally-giving-voters-a-voice-in-eliminating-unconstitutional-stop-and-frisk/"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "were murdered",
-     "url": "https://www.inquirer.com/news/homicides-philadelphia-2022-gun-violence-crisis-20221220.html"
     }
    ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "removed",
+     "url": "https://docs.google.com/document/d/15XbIH7mYjyvZeKbAYIowx9TtCtxyoijuNmFUowYbPPQ/edit",
+     "old": [
+      "were murdered"
+     ],
+     "new": []
+    },
+    {
+     "kind": "added",
+     "url": "https://www.inquirer.com/news/homicides-philadelphia-2022-gun-violence-crisis-20221220.html",
+     "old": [],
+     "new": [
+      "were murdered"
+     ]
+    },
+    {
+     "kind": "added",
+     "url": "https://www.thenation.com/article/politics/helen-gym-philadelphia-crime-public-safety/",
+     "old": [],
+     "new": [
+      "reported"
+     ]
+    },
+    {
+     "kind": "reworded",
+     "url": "https://nymag.com/intelligencer/2022/06/chesa-boudin-recall-shows-limits-of-san-francisco-liberalism.html",
+     "old": [
+      "brutal recall election."
+     ],
+     "new": [
+      "brutal recall election"
+     ]
+    },
+    {
+     "kind": "reworded",
+     "url": "https://nymag.com/intelligencer/2022/06/the-future-of-democratic-socialists-of-america-is-local.html",
+     "old": [
+      "Democratic Socialist of America"
+     ],
+     "new": [
+      "Democratic Socialists of America"
+     ]
+    },
+    {
+     "kind": "reworded",
+     "url": "https://phlcouncil.com/councilwoman-parker-introduces-historic-charter-change-finally-giving-voters-a-voice-in-eliminating-unconstitutional-stop-and-frisk/",
+     "old": [
+      "that she supported."
+     ],
+     "new": [
+      "she supported"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829082739",
+   "latestUrl": "https://web.archive.org/web/20260829082739/https://nymag.com/intelligencer/2023/05/the-progressive-take-over-of-big-cities-is-nearly-complete.html"
   },
   {
    "id": "045",
@@ -5361,11 +5559,13 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [],
+   "latestTimestamp": "20260822231358",
+   "latestUrl": "https://web.archive.org/web/20260822231358/https://nymag.com/intelligencer/2023/03/the-fierce-fight-between-brandon-johnson-vs-paul-vallas.html"
   },
   {
    "id": "046",
@@ -5422,16 +5622,18 @@ window.BARKAN_DATA = {
      "paired": [
       {
        "similarity": 0.96,
-       "inline": "It is overly simplistic to fully blame Buttigieg for a disaster that was, first and foremost, a catastrophic failure for Norfolk Southern, the rail company. Buttigieg this week announced a package of reforms that would, if implemented, bolster rail safety. But far too much of the response — from communication to cleanup — has been outsourced to a private company that has [-unnerved-]{+“frustrated and confused+} locals{+,” as Branko Marcetic wrote in Jacobin +}. {+“+}The company’s decision to undertake a [-“-]{+‘+}controlled burning[-”-]{+’+} to release the hazardous chemicals into the air{+,” he noted,+} has led to fears that it could harm residents’ health both in the near and long term. The EPA maintains that air and water tests show no hazard to residents, but government officials can get things wrong and they can lie. They maintained the water was safe to drink in Flint until it was not, and that there was no risk from the debris right after 9/11 before thousands came down with cancer. The residents of East Palestine are entitled to their paranoia."
+       "inline": "It is overly simplistic to fully blame Buttigieg for a disaster that was, first and foremost, a catastrophic failure for Norfolk Southern, the rail company. Buttigieg this week announced a package of reforms that would, if implemented, bolster rail safety. But far too much of the response — from communication to cleanup — has been outsourced to a private company that has [-unnerved-]{+“frustrated and confused+} locals{+,” as Branko Marcetic wrote in Jacobin +}. {+“+}The company’s decision to undertake a [-“-]{+‘+}controlled [-burning”-]{+burning’+} to release the hazardous chemicals into the air{+,” he noted,+} has led to fears that it could harm residents’ health both in the near and long term. The EPA maintains that air and water tests show no hazard to residents, but government officials can get things wrong and they can lie. They maintained the water was safe to drink in Flint until it was not, and that there was no risk from the debris right after 9/11 before thousands came down with cancer. The residents of East Palestine are entitled to their paranoia."
       }
      ]
     }
    ],
-   "linkDelta": [],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [],
+   "latestTimestamp": "20260829082952",
+   "latestUrl": "https://web.archive.org/web/20260829082952/https://nymag.com/intelligencer/2023/02/how-did-donald-trump-beat-pete-buttigieg-to-east-palestine.html"
   },
   {
    "id": "047",
@@ -5485,11 +5687,13 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [],
+   "latestTimestamp": "20260829083208",
+   "latestUrl": "https://web.archive.org/web/20260829083208/https://nymag.com/intelligencer/2022/12/what-hakeem-jeffries-and-chuck-schumer-could-do-for-new-york.html"
   },
   {
    "id": "048",
@@ -5535,11 +5739,13 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [],
+   "latestTimestamp": "20260829083307",
+   "latestUrl": "https://web.archive.org/web/20260829083307/https://nymag.com/intelligencer/2022/12/vera-institute-polling-progressives-can-win-on-crime.html"
   },
   {
    "id": "049",
@@ -5637,37 +5843,48 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "Hassan by about five points, on average",
-     "url": "https://www.realclearpolitics.com/epolls/2022/senate/nh/new-hampshire-senate-bolduc-vs-hassan-7379.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "called",
-     "url": "https://www.vanityfair.com/news/2022/10/don-bolduc-calls-embryo-disposal-disgusting-practice"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "pulled out",
-     "url": "https://thehill.com/homenews/campaign/3678517-gop-senate-campaign-arm-pulls-money-out-of-new-hampshire-as-bolduc-falters/"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "audio",
-     "url": "https://www.vanityfair.com/news/2022/10/don-bolduc-calls-embryo-disposal-disgusting-practice"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "reversed itself",
-     "url": "https://www.axios.com/2022/10/25/new-hampshire-senate-republicans-bolduc"
-    }
-   ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "removed",
+     "url": "https://thehill.com/homenews/campaign/3678517-gop-senate-campaign-arm-pulls-money-out-of-new-hampshire-as-bolduc-falters/",
+     "old": [
+      "pulled out"
+     ],
+     "new": []
+    },
+    {
+     "kind": "removed",
+     "url": "https://www.realclearpolitics.com/epolls/2022/senate/nh/new-hampshire-senate-bolduc-vs-hassan-7379.html",
+     "old": [
+      "Hassan by about five points, on average"
+     ],
+     "new": []
+    },
+    {
+     "kind": "added",
+     "url": "https://www.axios.com/2022/10/25/new-hampshire-senate-republicans-bolduc",
+     "old": [],
+     "new": [
+      "reversed itself"
+     ]
+    },
+    {
+     "kind": "reworded",
+     "url": "https://www.vanityfair.com/news/2022/10/don-bolduc-calls-embryo-disposal-disgusting-practice",
+     "old": [
+      "called"
+     ],
+     "new": [
+      "audio"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829083437",
+   "latestUrl": "https://web.archive.org/web/20260829083437/https://nymag.com/intelligencer/2022/10/don-bolducs-mitch-mcconnell-led-makeover-vs-maggie-hassan.html"
   },
   {
    "id": "050",
@@ -5821,11 +6038,6 @@ window.BARKAN_DATA = {
       }
      ],
      "new": [
-      {
-       "tag": "p",
-       "text": "Senator Catherine Cortez Masto makes her way to a Senate Democratic luncheon at the U.S. Capitol on September 28, 2022. Photo: Kevin Dietsch/Getty Images",
-       "links": []
-      },
       {
        "tag": "p",
        "text": "In a midterm environment that has felt as charged as any in modern times — with a Trumpified GOP threatening to dominate Congress and erode whatever democratic norms remain — there is no shortage of high-profile Senate campaigns. The upper chamber is currently divided evenly, with Vice-President Kamala Harris ’s tie-breaking vote giving Democrats a majority, but a narrow shift could put Republicans in control. The situation has made celebrities out of men like John Fetterman , Blake Masters , and, bizarrely enough, has brought TV doctor Mehmet Oz and the incoherent and scandal -plagued Herschel Walker to the brink of great power and consequence.",
@@ -6008,41 +6220,6 @@ window.BARKAN_DATA = {
          "url": "https://www.cookpolitical.com/ratings"
         }
        ]
-      },
-      {
-       "tag": "h2",
-       "text": "More on the 2022 midterms",
-       "links": []
-      },
-      {
-       "tag": "li",
-       "text": "Can Biden Convince Young Voters to Save His Party in the Midterms?",
-       "links": [
-        {
-         "anchor": "Can Biden Convince Young Voters to Save His Party in the Midterms?",
-         "url": "https://nymag.com/intelligencer/article/biden-convince-young-voters-midterms.html"
-        }
-       ]
-      },
-      {
-       "tag": "li",
-       "text": "Senate Control Could Come Down to These Long-Shot Races",
-       "links": [
-        {
-         "anchor": "Senate Control Could Come Down to These Long-Shot Races",
-         "url": "https://nymag.com/intelligencer/2022/10/senate-control-long-shot-races.html"
-        }
-       ]
-      },
-      {
-       "tag": "li",
-       "text": "Blake Masters Tries Out Election Denial Lite",
-       "links": [
-        {
-         "anchor": "Blake Masters Tries Out Election Denial Lite",
-         "url": "https://nymag.com/intelligencer/2022/10/blake-masters-tries-out-election-denial-lite.html"
-        }
-       ]
       }
      ],
      "new": [
@@ -6065,27 +6242,22 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "Blake Masters Tries Out Election Denial Lite",
-     "url": "https://nymag.com/intelligencer/2022/10/blake-masters-tries-out-election-denial-lite.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "Can Biden Convince Young Voters to Save His Party in the Midterms?",
-     "url": "https://nymag.com/intelligencer/article/biden-convince-young-voters-midterms.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "Senate Control Could Come Down to These Long-Shot Races",
-     "url": "https://nymag.com/intelligencer/2022/10/senate-control-long-shot-races.html"
-    }
-   ],
    "dropped": {
     "notice": 0,
-    "sidebar": 0
-   }
+    "sidebar": 5
+   },
+   "linkChanges": [
+    {
+     "kind": "removed",
+     "url": "https://nymag.com/intelligencer/2022/10/blake-masters-tries-out-election-denial-lite.html",
+     "old": [
+      "Blake Masters Tries Out Election Denial Lite"
+     ],
+     "new": []
+    }
+   ],
+   "latestTimestamp": "20260829083555",
+   "latestUrl": "https://web.archive.org/web/20260829083555/https://nymag.com/intelligencer/2022/10/democrats-cant-save-cortez-masto-no-hope.html"
   },
   {
    "id": "051",
@@ -6131,11 +6303,13 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [],
+   "latestTimestamp": "20230923154417",
+   "latestUrl": "https://web.archive.org/web/20230923154417/https://nymag.com/intelligencer/2022/09/biden-right-to-say-the-pandemic-is-over-on-60-minutes.html"
   },
   {
    "id": "052",
@@ -6305,27 +6479,32 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "recently green-lit",
-     "url": "https://www.nysfocus.com/2022/09/14/tiffany-caban-astoria-hallets-north-development/"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "recently helped green-light",
-     "url": "https://www.nysfocus.com/2022/09/14/tiffany-caban-astoria-hallets-north-development/"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "told",
-     "url": "https://nysfocus.com/2022/09/14/tiffany-caban-astoria-hallets-north-development"
-    }
-   ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "added",
+     "url": "https://nysfocus.com/2022/09/14/tiffany-caban-astoria-hallets-north-development",
+     "old": [],
+     "new": [
+      "told"
+     ]
+    },
+    {
+     "kind": "reworded",
+     "url": "https://www.nysfocus.com/2022/09/14/tiffany-caban-astoria-hallets-north-development/",
+     "old": [
+      "recently green-lit"
+     ],
+     "new": [
+      "recently helped green-light"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829083836",
+   "latestUrl": "https://web.archive.org/web/20260829083836/https://nymag.com/intelligencer/2022/09/a-war-is-breaking-out-on-the-left-between-yimbys-and-nimbys.html"
   },
   {
    "id": "053",
@@ -6366,17 +6545,22 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "ADDED",
-     "anchor": "noted",
-     "url": "https://www.nytimes.com/2022/09/13/nyregion/new-york-rules-yeshivas.html"
-    }
-   ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "added",
+     "url": "https://www.nytimes.com/2022/09/13/nyregion/new-york-rules-yeshivas.html",
+     "old": [],
+     "new": [
+      "noted"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260823111633",
+   "latestUrl": "https://web.archive.org/web/20260823111633/https://nymag.com/intelligencer/2022/09/eric-adams-kathy-hochul-shrug-at-nyt-yeshiva-story.html"
   },
   {
    "id": "054",
@@ -6422,22 +6606,24 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "according to a Bureau of Labor Statistics study",
-     "url": "https://www.nytimes.com/2022/02/01/business/paycheck-protection-program-costs.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "Bureau of Labor Statistics",
-     "url": "https://www.nytimes.com/2022/02/01/business/paycheck-protection-program-costs.html"
-    }
-   ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "reworded",
+     "url": "https://www.nytimes.com/2022/02/01/business/paycheck-protection-program-costs.html",
+     "old": [
+      "according to a Bureau of Labor Statistics study"
+     ],
+     "new": [
+      "Bureau of Labor Statistics"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829084101",
+   "latestUrl": "https://web.archive.org/web/20260829084101/https://nymag.com/intelligencer/2022/08/its-not-good-for-democrats-to-mock-the-ppp-program.html"
   },
   {
    "id": "055",
@@ -6499,22 +6685,24 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "roll back",
-     "url": "https://theintercept.com/2018/09/08/zephyr-teachout-sean-patrick-maloney-new-york-attorney-general/"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "reported",
-     "url": "https://theintercept.com/2018/09/08/zephyr-teachout-sean-patrick-maloney-new-york-attorney-general/"
-    }
-   ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "reworded",
+     "url": "https://theintercept.com/2018/09/08/zephyr-teachout-sean-patrick-maloney-new-york-attorney-general/",
+     "old": [
+      "roll back"
+     ],
+     "new": [
+      "reported"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829084212",
+   "latestUrl": "https://web.archive.org/web/20260829084212/https://nymag.com/intelligencer/2022/08/sean-patrick-maloney-vs-alessandra-biaggi-who-will-win.html"
   },
   {
    "id": "056",
@@ -6560,11 +6748,13 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [],
+   "latestTimestamp": "20260829084330",
+   "latestUrl": "https://web.archive.org/web/20260829084330/https://nymag.com/intelligencer/2022/08/is-becca-balint-the-heir-to-bernie-sanders.html"
   },
   {
    "id": "057",
@@ -6664,17 +6854,22 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "ADDED",
-     "anchor": "wrote",
-     "url": "https://www.nytimes.com/2022/08/07/us/politics/insulin-cap.html"
-    }
-   ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "added",
+     "url": "https://www.nytimes.com/2022/08/07/us/politics/insulin-cap.html",
+     "old": [],
+     "new": [
+      "wrote"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829084435",
+   "latestUrl": "https://web.archive.org/web/20260829084435/https://nymag.com/intelligencer/2022/08/the-republicans-are-the-part-of-insulin-gouging.html"
   },
   {
    "id": "058",
@@ -6720,22 +6915,30 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "in federal money",
-     "url": "https://www.cnbc.com/2022/07/28/china-competitiveness-and-chip-bill-passes-house-goes-to-biden.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "reports",
-     "url": "https://www.nbcwashington.com/news/business/money-report/house-passes-bill-to-boost-u-s-chip-production-and-china-competition-sending-it-to-biden/3119077/"
-    }
-   ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "removed",
+     "url": "https://www.cnbc.com/2022/07/28/china-competitiveness-and-chip-bill-passes-house-goes-to-biden.html",
+     "old": [
+      "in federal money"
+     ],
+     "new": []
+    },
+    {
+     "kind": "added",
+     "url": "https://www.nbcwashington.com/news/business/money-report/house-passes-bill-to-boost-u-s-chip-production-and-china-competition-sending-it-to-biden/3119077/",
+     "old": [],
+     "new": [
+      "reports"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260823005335",
+   "latestUrl": "https://web.archive.org/web/20260823005335/https://nymag.com/intelligencer/2022/08/nancy-pelosi-taiwan-trip-dangerous-stunt.html"
   },
   {
    "id": "059",
@@ -6789,22 +6992,24 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
+   "dropped": {
+    "notice": 0,
+    "sidebar": 5
+   },
+   "linkChanges": [
     {
-     "op": "REMOVED",
-     "anchor": "followed the lead",
-     "url": "https://www.nbcnews.com/politics/congress/bernie-sanders-calls-buttigieg-take-action-flight-delays-cancellations-rcna35959"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "noted that",
-     "url": "https://www.nbcnews.com/politics/congress/bernie-sanders-calls-buttigieg-take-action-flight-delays-cancellations-rcna35959"
+     "kind": "reworded",
+     "url": "https://www.nbcnews.com/politics/congress/bernie-sanders-calls-buttigieg-take-action-flight-delays-cancellations-rcna35959",
+     "old": [
+      "followed the lead"
+     ],
+     "new": [
+      "noted that"
+     ]
     }
    ],
-   "dropped": {
-    "notice": 1,
-    "sidebar": 0
-   }
+   "latestTimestamp": "20260804010233",
+   "latestUrl": "https://web.archive.org/web/20260804010233/https://nymag.com/intelligencer/article/pete-buttigieg-air-travel-less-hellish.html"
   },
   {
    "id": "060",
@@ -6950,37 +7155,54 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "conservative majority",
-     "url": "https://www.nysfocus.com/2022/07/07/court-of-appeals-conservative-bloc/"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "presenting expert testimony",
-     "url": "https://law.justia.com/cases/new-york/court-of-appeals/2021/22.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "sue for damages",
-     "url": "https://law.justia.com/cases/new-york/court-of-appeals/2022/10.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "suing employers",
-     "url": "https://law.justia.com/cases/new-york/court-of-appeals/2022/25.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "noted",
-     "url": "https://nysfocus.com/2022/07/07/court-of-appeals-conservative-bloc/"
-    }
-   ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "removed",
+     "url": "https://law.justia.com/cases/new-york/court-of-appeals/2021/22.html",
+     "old": [
+      "presenting expert testimony"
+     ],
+     "new": []
+    },
+    {
+     "kind": "removed",
+     "url": "https://law.justia.com/cases/new-york/court-of-appeals/2022/10.html",
+     "old": [
+      "sue for damages"
+     ],
+     "new": []
+    },
+    {
+     "kind": "removed",
+     "url": "https://law.justia.com/cases/new-york/court-of-appeals/2022/25.html",
+     "old": [
+      "suing employers"
+     ],
+     "new": []
+    },
+    {
+     "kind": "removed",
+     "url": "https://www.nysfocus.com/2022/07/07/court-of-appeals-conservative-bloc/",
+     "old": [
+      "conservative majority"
+     ],
+     "new": []
+    },
+    {
+     "kind": "added",
+     "url": "https://nysfocus.com/2022/07/07/court-of-appeals-conservative-bloc/",
+     "old": [],
+     "new": [
+      "noted"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829084800",
+   "latestUrl": "https://web.archive.org/web/20260829084800/https://nymag.com/intelligencer/2022/07/janet-difiores-resignation-gives-ny-dems-an-opening.html"
   },
   {
    "id": "061",
@@ -7050,22 +7272,24 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "said",
-     "url": "https://www.nytimes.com/2021/02/27/us/asian-american-hate-crimes.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "that",
-     "url": "https://www.nytimes.com/2021/02/27/us/asian-american-hate-crimes.html"
-    }
-   ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "reworded",
+     "url": "https://www.nytimes.com/2021/02/27/us/asian-american-hate-crimes.html",
+     "old": [
+      "said"
+     ],
+     "new": [
+      "that"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260812070922",
+   "latestUrl": "https://web.archive.org/web/20260812070922/https://nymag.com/intelligencer/2022/06/chesa-boudin-recall-is-the-beginning-of-a-backlash.html"
   },
   {
    "id": "062",
@@ -7206,11 +7430,13 @@ window.BARKAN_DATA = {
      "paired": []
     }
    ],
-   "linkDelta": [],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [],
+   "latestTimestamp": "20260829085130",
+   "latestUrl": "https://web.archive.org/web/20260829085130/https://nymag.com/intelligencer/2022/06/chesa-boudin-recall-shows-limits-of-san-francisco-liberalism.html"
   },
   {
    "id": "063",
@@ -7264,22 +7490,24 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "telling police",
-     "url": "https://www.nytimes.com/2021/02/09/us/politics/john-fetterman-gun-black-jogger.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "wrote",
-     "url": "https://www.nytimes.com/2021/02/09/us/politics/john-fetterman-gun-black-jogger.html"
-    }
-   ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "reworded",
+     "url": "https://www.nytimes.com/2021/02/09/us/politics/john-fetterman-gun-black-jogger.html",
+     "old": [
+      "telling police"
+     ],
+     "new": [
+      "wrote"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829085224",
+   "latestUrl": "https://web.archive.org/web/20260829085224/https://nymag.com/intelligencer/2022/06/gretchen-whitmer-john-fetterman-tim-ryan-could-save-dems.html"
   },
   {
    "id": "064",
@@ -7340,11 +7568,6 @@ window.BARKAN_DATA = {
      "new": [
       {
        "tag": "p",
-       "text": "Times have changed. Photo: Michael Ochs Archives/Getty Images",
-       "links": []
-      },
-      {
-       "tag": "p",
        "text": "A recent survey found that New York City bled hundreds of thousands of residents in 2020 and 2021, with the pandemic taking a significant toll. Anecdotal evidence suggests that the trend might at least partly reverse itself in 2022, but the structure of the city may be transformed permanently. The outer boroughs are recovering far faster than midtown. As Matthew Haag noted in the New York Times , more and more corporations are relocating to Brooklyn and Queens , where many of their employees live, or out of the city altogether.",
        "links": [
         {
@@ -7402,47 +7625,34 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "How About a 4-Day Workweek Already?",
-     "url": "http://nymag.com/intelligencer/2020/05/how-about-a-4-day-workweek-already.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "Revolt of the Goldman Juniors",
-     "url": "http://nymag.com/intelligencer/2021/11/goldman-sachs-analysts-money-pandemic.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "Yoga Teachers Are Unionizing to Heal the Wellness Industry",
-     "url": "http://www.thecut.com/2019/09/yogaworks-teachers-first-yoga-teacher-union.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "longest one-way commute times",
-     "url": "https://www.census.gov/content/dam/Census/library/publications/2021/acs/acs-47.pdf"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "worked in person",
-     "url": "https://www.nytimes.com/2022/05/30/nyregion/nyc-manhattan-brooklyn-commute-offices.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "longest one-way",
-     "url": "https://www.census.gov/content/dam/Census/library/publications/2021/acs/acs-47.pdf"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "noted",
-     "url": "https://www.nytimes.com/2022/05/30/nyregion/nyc-manhattan-brooklyn-commute-offices.html"
-    }
-   ],
    "dropped": {
     "notice": 0,
-    "sidebar": 1
-   }
+    "sidebar": 5
+   },
+   "linkChanges": [
+    {
+     "kind": "reworded",
+     "url": "https://www.census.gov/content/dam/Census/library/publications/2021/acs/acs-47.pdf",
+     "old": [
+      "longest one-way commute times"
+     ],
+     "new": [
+      "longest one-way"
+     ]
+    },
+    {
+     "kind": "reworded",
+     "url": "https://www.nytimes.com/2022/05/30/nyregion/nyc-manhattan-brooklyn-commute-offices.html",
+     "old": [
+      "worked in person"
+     ],
+     "new": [
+      "noted"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829085538",
+   "latestUrl": "https://web.archive.org/web/20260829085538/https://nymag.com/intelligencer/2022/06/kill-the-commute-for-good.html"
   },
   {
    "id": "065",
@@ -7634,32 +7844,40 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "Democrats have pivoted to bemoaning disinformation online",
-     "url": "http://nymag.com/intelligencer/2022/05/the-liberal-obsession-with-disinformation-is-not-helping.html"
-    },
-    {
-     "op": "REMOVED",
-     "anchor": "around 400 million guns",
-     "url": "https://www.nytimes.com/2022/05/17/us/politics/gun-manufacturing-atf.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "Democrats have pivoted to bemoaning disinformation online",
-     "url": "https://nymag.com/intelligencer/2022/05/the-liberal-obsession-with-disinformation-is-not-helping.html"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "called",
-     "url": "https://www.nytimes.com/2022/05/17/us/politics/gun-manufacturing-atf.html"
-    }
-   ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "removed",
+     "url": "http://nymag.com/intelligencer/2022/05/the-liberal-obsession-with-disinformation-is-not-helping.html",
+     "old": [
+      "Democrats have pivoted to bemoaning disinformation online"
+     ],
+     "new": []
+    },
+    {
+     "kind": "added",
+     "url": "https://nymag.com/intelligencer/2022/05/the-liberal-obsession-with-disinformation-is-not-helping.html",
+     "old": [],
+     "new": [
+      "Democrats have pivoted to bemoaning disinformation online"
+     ]
+    },
+    {
+     "kind": "reworded",
+     "url": "https://www.nytimes.com/2022/05/17/us/politics/gun-manufacturing-atf.html",
+     "old": [
+      "around 400 million guns"
+     ],
+     "new": [
+      "called"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829085646",
+   "latestUrl": "https://web.archive.org/web/20260829085646/https://nymag.com/intelligencer/2022/05/texas-school-shooting-why-we-keep-letting-this-happen.html"
   },
   {
    "id": "066",
@@ -7747,22 +7965,24 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "REMOVED",
-     "anchor": "are imposed",
-     "url": "https://www.npr.org/2022/05/19/1099748064/baby-infant-formula-shortages"
-    },
-    {
-     "op": "ADDED",
-     "anchor": "notes",
-     "url": "https://www.npr.org/2022/05/19/1099748064/baby-infant-formula-shortages"
-    }
-   ],
    "dropped": {
     "notice": 1,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "reworded",
+     "url": "https://www.npr.org/2022/05/19/1099748064/baby-infant-formula-shortages",
+     "old": [
+      "are imposed"
+     ],
+     "new": [
+      "notes"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829085837",
+   "latestUrl": "https://web.archive.org/web/20260829085837/https://nymag.com/intelligencer/2022/05/nationalize-baby-formula.html"
   },
   {
    "id": "067",
@@ -7894,7 +8114,7 @@ window.BARKAN_DATA = {
      "paired": [
       {
        "similarity": 0.41,
-       "inline": "[-But there was journalism, too — enough of it that The eXile , in its relatively short existence, could make its mark. -]{+“+}Taibbi wrote on [-the-]{+subjects+} [-IMF-]{+ranging from Washington and I.M.F.+}’s policy in Russia[-,-]{+ to+} Moscow prisons, [-and -]labor strikes{+, and religious cults+}. He [-spent-]{+hung+} [-time-]{+out+} [-among-]{+with+} crime bosses, cops, and [-corrupt-]{+rogue+} politicians[-,-] [-writing-]{+and+} [-an-]{+wrote+} [-illuminating-]{+a+} series in which he lived [-as-]{+the+} [-an-]{+lives of+} ordinary [-Russian-]{+Russians+} for {+days and +}weeks{+,+} [-at-]{+working as+} a [-time. He was-]{+bricklayer,+} a miner{+,+} and a [-bricklayer.-]{+vegetable+} [-He-]{+hocker+} [-attended-]{+and attending+} a Moscow high school.[- Meanwhile, the international cognoscenti and many of the Americans working at prestige newspapers in Moscow were convinced that American-style free enterprise and democracy were afoot. As decided outsiders, Taibbi and Ames could effectively puncture the narrative that post-Soviet Russia was a Western success story.-]{+”+}"
+       "inline": "[-But there was journalism, too — enough of it that The eXile , in its relatively short existence, could make its mark. -]{+“+}Taibbi wrote on [-the-]{+subjects+} [-IMF’s-]{+ranging from Washington and I.M.F.’s+} policy in Russia[-,-]{+ to+} Moscow prisons, [-and -]labor strikes{+, and religious cults+}. He [-spent-]{+hung+} [-time-]{+out+} [-among-]{+with+} crime bosses, cops, and [-corrupt-]{+rogue+} politicians[-,-] [-writing-]{+and+} [-an-]{+wrote+} [-illuminating-]{+a+} series in which he lived [-as-]{+the+} [-an-]{+lives of+} ordinary [-Russian-]{+Russians+} for {+days and +}weeks{+,+} [-at-]{+working as+} a [-time. He was-]{+bricklayer,+} a miner{+,+} and a [-bricklayer.-]{+vegetable+} [-He-]{+hocker+} [-attended-]{+and attending+} a Moscow high school.[- Meanwhile, the international cognoscenti and many of the Americans working at prestige newspapers in Moscow were convinced that American-style free enterprise and democracy were afoot. As decided outsiders, Taibbi and Ames could effectively puncture the narrative that post-Soviet Russia was a Western success story.-]{+”+}"
       }
      ]
     },
@@ -7923,17 +8143,22 @@ window.BARKAN_DATA = {
      ]
     }
    ],
-   "linkDelta": [
-    {
-     "op": "ADDED",
-     "anchor": "a 2010 account",
-     "url": "https://www.vanityfair.com/culture/2010/02/exile-201002"
-    }
-   ],
    "dropped": {
     "notice": 0,
     "sidebar": 0
-   }
+   },
+   "linkChanges": [
+    {
+     "kind": "added",
+     "url": "https://www.vanityfair.com/culture/2010/02/exile-201002",
+     "old": [],
+     "new": [
+      "a 2010 account"
+     ]
+    }
+   ],
+   "latestTimestamp": "20260829090037",
+   "latestUrl": "https://web.archive.org/web/20260829090037/https://nymag.com/intelligencer/2021/10/what-happened-to-matt-taibbi.html"
   }
  ]
 };
