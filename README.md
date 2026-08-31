@@ -1,4 +1,4 @@
-# Ross Barkan + NYMag -  67 Columns Data 
+# 67 Columns Data 
 
 `/docs` contains the code for the diffs website which is published at
 <https://zona-motel.github.io/barkan-up-the-wrong-tree/>. diffs.js is the diffs data for the site in json format. Matches the markdown output from the scripts. 
