@@ -11,10 +11,10 @@ window.BARKAN_DATA = {
   "noChanges": 0,
   "noticesDropped": 23,
   "sidebarsDropped": 35,
-  "withLinkChanges": 37,
-  "linksAdded": 45,
-  "linksRemoved": 28,
-  "linksReworded": 34
+  "withLinkChanges": 35,
+  "linksAdded": 42,
+  "linksRemoved": 26,
+  "linksReworded": 35
  },
  "articles": [
   {
@@ -6485,21 +6485,14 @@ window.BARKAN_DATA = {
    },
    "linkChanges": [
     {
-     "kind": "added",
-     "url": "https://nysfocus.com/2022/09/14/tiffany-caban-astoria-hallets-north-development",
-     "old": [],
-     "new": [
-      "told"
-     ]
-    },
-    {
      "kind": "reworded",
-     "url": "https://www.nysfocus.com/2022/09/14/tiffany-caban-astoria-hallets-north-development/",
+     "url": "https://nysfocus.com/2022/09/14/tiffany-caban-astoria-hallets-north-development",
      "old": [
       "recently green-lit"
      ],
      "new": [
-      "recently helped green-light"
+      "recently helped green-light",
+      "told"
      ]
     }
    ],
@@ -7185,17 +7178,11 @@ window.BARKAN_DATA = {
      "new": []
     },
     {
-     "kind": "removed",
-     "url": "https://www.nysfocus.com/2022/07/07/court-of-appeals-conservative-bloc/",
+     "kind": "reworded",
+     "url": "https://nysfocus.com/2022/07/07/court-of-appeals-conservative-bloc/",
      "old": [
       "conservative majority"
      ],
-     "new": []
-    },
-    {
-     "kind": "added",
-     "url": "https://nysfocus.com/2022/07/07/court-of-appeals-conservative-bloc/",
-     "old": [],
      "new": [
       "noted"
      ]
@@ -7849,22 +7836,6 @@ window.BARKAN_DATA = {
     "sidebar": 0
    },
    "linkChanges": [
-    {
-     "kind": "removed",
-     "url": "http://nymag.com/intelligencer/2022/05/the-liberal-obsession-with-disinformation-is-not-helping.html",
-     "old": [
-      "Democrats have pivoted to bemoaning disinformation online"
-     ],
-     "new": []
-    },
-    {
-     "kind": "added",
-     "url": "https://nymag.com/intelligencer/2022/05/the-liberal-obsession-with-disinformation-is-not-helping.html",
-     "old": [],
-     "new": [
-      "Democrats have pivoted to bemoaning disinformation online"
-     ]
-    },
     {
      "kind": "reworded",
      "url": "https://www.nytimes.com/2022/05/17/us/politics/gun-manufacturing-atf.html",

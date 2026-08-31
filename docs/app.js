@@ -222,24 +222,31 @@
 
     // Copies a link to this article. It lives inside the <summary>, so its click
     // has to be kept from reaching the toggle.
-    var perma = el("button", "perma", "#");
+    var perma = el("button", "perma");
     perma.type = "button";
-    perma.title = "Copy a link to this article";
-    perma.setAttribute("aria-label", "Copy a link to " + a.title);
+    // "Copy link" alone would be ambiguous: the row also carries links to the
+    // article itself and to two snapshots of it. Name what is being copied.
+    perma.setAttribute("aria-label", "Copy link to this diff: " + a.title);
+    var ico = el("span", "ico", "📋");
+    var tip = el("span", "tip", "Copy link to this diff");
+    perma.appendChild(ico);
+    perma.appendChild(tip);
     perma.addEventListener("click", function (e) {
       e.preventDefault();
       e.stopPropagation();
       copyText(permalink(a.id)).then(function () {
-        perma.textContent = "✓";
-        perma.classList.add("done");
+        ico.textContent = "✓";
+        tip.textContent = "Copied";
       }, function () {
-        perma.textContent = "!";
-        perma.classList.add("done");
+        ico.textContent = "✕";
+        tip.textContent = "Press ⌘C to copy";
       });
+      perma.classList.add("done");
       setTimeout(function () {
-        perma.textContent = "#";
+        ico.textContent = "📋";
+        tip.textContent = "Copy link to this diff";
         perma.classList.remove("done");
-      }, 1200);
+      }, 1400);
     });
     sum.appendChild(perma);
 

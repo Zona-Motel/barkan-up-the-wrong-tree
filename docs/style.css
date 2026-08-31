@@ -77,17 +77,34 @@ article.piece summary .c-date,
 article.piece summary .c-pass,
 article.piece summary .c-links { color: var(--dim); font-size: 13px; font-variant-numeric: tabular-nums; }
 
-/* Sits in the last grid cell so it never disturbs the columns. Kept faint until
-   the row is hovered -- it is a utility, not part of the data. */
+/* Sits in the last grid cell so it never disturbs the columns. Visible but
+   receded until the row is hovered -- it is a utility, not part of the data. */
 .perma {
+  position: relative;
   justify-self: end;
   border: 0; background: none; padding: 0; cursor: pointer;
-  font: inherit; font-size: 13px; line-height: 1;
-  color: transparent; transition: color .1s;
+  font: inherit; font-size: 12px; line-height: 1;
+  opacity: .3; transition: opacity .1s;
 }
-article.piece summary:hover .perma, .perma:focus-visible { color: var(--dim); }
-.perma:hover { color: #000; }
-.perma.done { color: var(--ins-fg); }
+article.piece summary:hover .perma { opacity: .75; }
+.perma:hover, .perma:focus-visible, .perma.done { opacity: 1; }
+
+/* The label sits to the left of the button rather than below it, so it never
+   covers the next row and never runs off the right edge of the window. */
+.perma .tip {
+  position: absolute;
+  right: calc(100% + 7px);
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  background: #000; color: #fff;
+  padding: 3px 7px; border-radius: 3px;
+  font-size: 11px; font-weight: 400; line-height: 1.4;
+  opacity: 0; pointer-events: none; transition: opacity .1s;
+  z-index: 5;
+}
+.perma:hover .tip, .perma:focus-visible .tip, .perma.done .tip { opacity: 1; }
+.perma.done .tip { background: var(--ins-fg); }
 
 article.piece details[open] { padding-bottom: 26px; border-bottom: 1px solid var(--rule); }
 article.piece .meta,
